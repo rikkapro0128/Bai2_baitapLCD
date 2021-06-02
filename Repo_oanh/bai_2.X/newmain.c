@@ -15,69 +15,88 @@
 #pragma config WRT = OFF        // Flash Program Memory Self Write Enable bits (Write protection off)
 
 #define _XTAL_FREQ 4000000
+#define timeTest 2000 
 #include <xc.h>
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include "lcd.h"
 
-void main(void) {
-    const char dat_line1[] = {'N','g','u','y',0X01,'n','T',0X01,'n','P', 'h', 0X02, 'p'};
-    const char dat_line2[] = {'N','g',0X03,'y','S','i','n','h', ':', '1', '2', '/', '2', '0', '0', '1'};
-    const char dat_line3[] = {'N',0x05,'i','S', ':', 'N', 'i', 'n', 'h', 'T', 'h', 'u', 0x04, 'n'};
-    const char dat_line4[] = {'L', 0x06, 'p', ':', 0x00, 'H', 'V', 'T', '1', '5', 'A'};
-    const char dat_line5[] = {'H','K','T','T', ':', 'G', 0x07, 'V', 0x09, 'p'};
-    const char MSSV[] = "MSSV:19436481";
-    const char cgram_dat[] = {11, 20, 12, 18, 12, 20, 24, 14, // e nguyen 0
-                1, 10, 20, 0, 28, 20, 30, 0 , // a tan1
-            2, 4, 8, 0, 28, 20, 30, 0 , // a sac 2
-            0, 8, 4, 0, 28, 20, 30, 0 , // a ngay  3
-    8, 20, 0, 28, 20, 30, 8, 0, // a thuan 4
-    0, 12, 4, 28, 20, 20, 28, 0 , // o noi sinh  5
-    1, 2, 12, 4, 28, 20, 28, 0 , // o lop  6
-    16, 8, 0, 28, 20, 20, 28, 0, // 7
-    0x0E,0X09,0X09,0X1D,0X09,0X09,0X0E,0X00, //8
-    1, 10, 20, 0, 28, 20, 30, 0, // 9 
-            0X99}; // Ma ket thuc chuoi la 99H
-    unsigned char i;
-    lcd_init(); // Khoi dong LCD
-    // Xu ly nap ma ky tu dac biet vao CGRAM.
-    i = 0;
-    lcd_put_byte(0,0x40); // Lenh = 40H - Dat CGRAM co dia chi bat dau la 00H. while(lcd_busy()); // Kiem tra LCD bao ban. while(cgram_dat[i]!=0x99) // Kiem tra nap xong du lieu cho cac ky tu dac biet, { // ky tu ket thuc chuoi la 99H.
+void addCharSpecial(char character[]);
+unsigned int getLengthArr(char character[]);
+void showContent(char character_firt[], char character_second[]);
+
+void addCharSpecial(char character[]) {
+    unsigned int i = 0;
+    lcd_put_byte(0, 0x40);
     while(lcd_busy());
-    while(cgram_dat[i] != 0x99){
-        lcd_put_byte(1,cgram_dat[i]); // Ghi cac ma ky tu dac biet vao CGRAM theo dia chi. while(lcd_busy()); // Kiem tra LCD bao ban.
+    while(character[i] != 0x99) {
+        lcd_put_byte(1, character[i]);
         while(lcd_busy());
         i++;
     }
-    lcd_putc('\f'); // xóa màn hình
-    lcd_gotoxy(0,0); // Xac dinh toa do bat dau hien thi cho hang 1.
-    for(i = 0; i <= 12; i++) {
-        lcd_putc(dat_line1[i]);
+}
+
+unsigned int getLengthArr(char character[]) {
+    unsigned int i = 0;
+    while(1) {
+        if(character[i] == '\n')
+        {
+            break;
+        }
+        i++;
     }
-    lcd_gotoxy(0,1); // Xac dinh toa do bat dau hien thi cho hang 2. for(i=0;i<=9;i++)
-    lcd_puts(MSSV);
-    __delay_ms(2000);
+    return i;
+}
+
+void showContent(char character_firt[], char character_second[]) {
+    unsigned int i;
+    unsigned int length_1 = getLengthArr(character_firt);
     lcd_putc('\f');
-    lcd_gotoxy(0,0);
-     // Xac dinh toa do bat dau hien thi cho hang 1.
-    for(i = 0; i <= 15; i++) {
-        lcd_putc(dat_line2[i]);
+    lcd_gotoxy(0, 0);
+    for(i = 0; i < length_1; i++) {
+        lcd_putc(character_firt[i]);
     }
-    lcd_gotoxy(0,1); // Xac dinh toa do bat dau hien thi cho hang 2. for(i=0;i<=9;i++)
-    for(i = 0; i <= 13; i++) {
-        lcd_putc(dat_line3[i]);
+    unsigned int length_2 = getLengthArr(character_second);
+    lcd_gotoxy(0, 1);
+    for(i = 0; i < length_2; i++) {
+        lcd_putc(character_second[i]);
     }
-    __delay_ms(2000);
-    lcd_putc('\f');
-    lcd_gotoxy(0,0);
-     // Xac dinh toa do bat dau hien thi cho hang 1.
-    for(i = 0; i <= 9; i++) {
-        lcd_putc(dat_line5[i]);
-    }
-    lcd_gotoxy(0,1); // Xac dinh toa do bat dau hien thi cho hang 2. for(i=0;i<=9;i++)
-    for(i = 0; i <= 10; i++) {
-        lcd_putc(dat_line4[i]);
-    }
-    __delay_ms(2000);
+}
+
+void main(void) {
+    const char your_name[] = {'T', 'r', 0x00, 'n', 'h', ' ', 'K', 'i', 0x01, 'u', ' ', 'O', 'a', 'n', 'h', '\n'};
+    const char your_born[] = {'N','g',0X02,'y','S','i','n','h', ':', '1', '0', '/', '2', '0', '0', '1', '\n'};
+    const char your_live[] = {'N',0x03,'i','S', 'i', 'n', 'h', ':', 0x04, 0x05, 'n', 'g', ' ', 'N', 'a', 'i', '\n'};
+    const char HKTT[] = {'H' ,'K' ,'T', 'T', ':','G', 0x01, ' ', 'V', 0x02, 'p', '\n'};
+    const char class[] = {'L', 0x03, 'p', ':', 0x00, 'H', 'V', 'T' ,'1', '5' , 'A', '\n'};
+    const char MSSV[] = "MSSV:19471301\n";
+    const char special_name_born_live[] 
+    = {
+        4, 0, 4, 4, 4, 0, 4, 0,// ij 0x00
+        2, 9, 20, 8, 20, 24, 12, 0,// eef 0x01
+        8, 4, 0, 12, 18, 18, 15, 0, //af 0x02
+        6, 1, 14, 17, 17, 17, 14, 0, // ow 0x03
+        14, 9, 9, 29, 9, 9, 14, 0, //dd 0x04
+        2, 13, 18, 12, 18, 18, 12, 0, // oof 0x05
+        0X99
+    }; // Ma ket thuc chuoi la 99H
+    const char special_HKTT_class[] 
+    = {
+        14, 9, 9, 29, 9, 9, 14, 0, //dd 0x04
+        8, 4, 0, 12, 18, 18, 12, 0, // of 0x06
+        1, 10, 20, 0, 28, 20, 31, 0, // aas 0x07 
+        1, 13, 5, 28, 20, 20, 28, 0, // ows 0x08
+        0X99
+    };
+    unsigned int i = 0, length = 0;
+    lcd_init();
+    addCharSpecial(special_name_born_live); // add character
+    showContent(your_name, MSSV);
+    __delay_ms(timeTest);
+    showContent(your_born, your_live);
+    __delay_ms(timeTest);
+    addCharSpecial(special_HKTT_class); // add character
+    showContent(HKTT, class);
+    __delay_ms(timeTest);
 }

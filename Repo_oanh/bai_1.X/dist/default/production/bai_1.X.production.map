@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files\Microchip\xc8\v2.32\pic\dat\en_msgs.txt -cn \
   -h+dist/default/production\bai_1.X.production.sym \
   --cmf=dist/default/production\bai_1.X.production.cmf -z -Q16F887 \
-  -oC:\Users\ssc002\AppData\Local\Temp\xcAsc3c.4 --defsym=__MPLAB_BUILD=1 \
+  -oC:\Users\ssc002\AppData\Local\Temp\xcAs590.4 --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/bai_1.X.production.map -E1 -ver=XC8 Compiler \
   --acfsm=1493 -ASTACK=0110h-016Fh -pstack=STACK -ACODE=00h-07FFhx4 \
   -ASTRCODE=00h-01FFFh -ASTRING=00h-0FFhx32 -ACONST=00h-0FFhx32 \
@@ -18,7 +18,7 @@ Linker command line:
   -AEEDATA=00h-0FFh/02100h -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 \
   -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 \
   -preset_vec=00h,intentry,init,end_init -ppowerup=CODE -pcinit=CODE \
-  -pfunctab=ENTRY -k C:\Users\ssc002\AppData\Local\Temp\xcAsc3c.o \
+  -pfunctab=ENTRY -k C:\Users\ssc002\AppData\Local\Temp\xcAs590.o \
   dist/default/production\bai_1.X.production.o 
 
 Object code version is 3.11
@@ -28,23 +28,23 @@ Machine type is 16F887
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\ssc002\AppData\Local\Temp\xcAsc3c.o
+C:\Users\ssc002\AppData\Local\Temp\xcAs590.o
                 end_init                              0        0        3        0       0
                 config                             2007     2007        2        0       4
 dist/default/production\bai_1.X.production.o
                 cinit                               7FC      7FC        4      FF8       0
                 config                             2007     2007        2        0       4
-                text7                               60B      60B       30      C16       0
-                text6                               674      674       44      CE8       0
-                text5                               63B      63B       39      C76       0
+                text7                               5BB      5BB       30      B76       0
+                text6                               624      624       44      C48       0
+                text5                               5EB      5EB       39      BD6       0
                 text4                               759      759       A3      EB2       0
-                text3                               5E5      5E5       26      BCA       0
-                text2                               6FD      6FD       5C      DFA       0
-                text1                               5C2      5C2       23      B84       0
-                maintext                            6B8      6B8       45      D70       0
+                text3                               595      595       26      B2A       0
+                text2                               668      668       5C      CD0       0
+                text1                               572      572       23      AE4       0
+                maintext                            6C4      6C4       95      D88       0
                 cstackBANK0                          20       20        4       20       1
                 cstackCOMMON                         70       70        E       70       1
-                strings                               3        3       64        6       0
+                strings                               3        3       60        6       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
@@ -52,19 +52,19 @@ TOTAL           Name                               Link     Load   Length     Sp
         CLASS   CODE           
                 end_init                              0        0        3         0
                 cinit                               7FC      7FC        4         0
-                text7                               60B      60B       30         0
-                text6                               674      674       44         0
-                text5                               63B      63B       39         0
+                text7                               5BB      5BB       30         0
+                text6                               624      624       44         0
+                text5                               5EB      5EB       39         0
                 text4                               759      759       A3         0
-                text3                               5E5      5E5       26         0
-                text2                               6FD      6FD       5C         0
-                text1                               5C2      5C2       23         0
-                maintext                            6B8      6B8       45         0
+                text3                               595      595       26         0
+                text2                               668      668       5C         0
+                text1                               572      572       23         0
+                maintext                            6C4      6C4       95         0
 
         CLASS   STRCODE        
 
         CLASS   STRING         
-                strings                               3        3       64         0
+                strings                               3        3       60         0
 
         CLASS   CONST          
 
@@ -107,16 +107,16 @@ TOTAL           Name                               Link     Load   Length     Sp
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
 
                 reset_vec                      000000  000003  000003         0       0  CODE        2
-                strings                        000003  000064  000067         6       0  STRING      2
+                strings                        000003  000060  000063         6       0  STRING      2
                 cstackBANK0                    000020  000004  000024        20       1  BANK0       1
                 cstackCOMMON                   000070  00000E  00007E        70       1  COMMON      1
-                text1                          0005C2  000023  0005E5       B84       0  CODE        2
-                text3                          0005E5  000026  00060B       BCA       0  CODE        2
-                text7                          00060B  000030  00063B       C16       0  CODE        2
-                text5                          00063B  000039  000674       C76       0  CODE        2
-                text6                          000674  000044  0006B8       CE8       0  CODE        2
-                maintext                       0006B8  000045  0006FD       D70       0  CODE        2
-                text2                          0006FD  00005C  000759       DFA       0  CODE        2
+                text1                          000572  000023  000595       AE4       0  CODE        2
+                text3                          000595  000026  0005BB       B2A       0  CODE        2
+                text7                          0005BB  000030  0005EB       B76       0  CODE        2
+                text5                          0005EB  000039  000624       BD6       0  CODE        2
+                text6                          000624  000044  000668       C48       0  CODE        2
+                text2                          000668  00005C  0006C4       CD0       0  CODE        2
+                maintext                       0006C4  000095  000759       D88       0  CODE        2
                 text4                          000759  0000A3  0007FC       EB2       0  CODE        2
                 cinit                          0007FC  000004  000800       FF8       0  CODE        2
 
@@ -128,12 +128,12 @@ UNUSED ADDRESS RANGES
         BANK1            00A0-00EF             50           1
         BANK2            0110-016F             60           1
         BANK3            0190-01EF             60           1
-        CODE             0067-05C1            55B           2
+        CODE             0063-0571            50F           2
                          0800-1FFF            800
-        CONST            0067-05C1            100           2
+        CONST            0063-0571            100           2
                          0800-1FFF            100
         EEDATA           2100-21FF            100           2
-        ENTRY            0067-05C1            100           2
+        ENTRY            0063-0571            100           2
                          0800-1FFF            100
         IDLOC            2000-2003              4           2
         RAM              0024-006F             4C           1
@@ -145,9 +145,9 @@ UNUSED ADDRESS RANGES
         SFR2             0100-010F             10           1
         SFR3             0180-018F             10           1
         STACK            0110-016F             60           1
-        STRCODE          0067-05C1            55B           2
+        STRCODE          0063-0571            50F           2
                          0800-1FFF           1800
-        STRING           0067-05C1            100           2
+        STRING           0063-0571            100           2
                          0800-1FFF            100
 
                                   Symbol Table
@@ -243,26 +243,32 @@ ___stackhi               (abs)        0000
 ___stacklo               (abs)        0000
 __end_of__initialization cinit        07FC
 __end_of__stringtab      strings      0009
-__end_of_lcd_busy        text7        063B
-__end_of_lcd_gotoxy      text3        060B
+__end_of_lcd_busy        text7        05EB
+__end_of_lcd_gotoxy      text3        05BB
 __end_of_lcd_init        text4        07FC
-__end_of_lcd_put_byte    text5        0674
-__end_of_lcd_put_nibble  text6        06B8
-__end_of_lcd_putc        text2        0759
-__end_of_lcd_puts        text1        05E5
-__end_of_main            maintext     06FD
+__end_of_lcd_put_byte    text5        0624
+__end_of_lcd_put_nibble  text6        0668
+__end_of_lcd_putc        text2        06C4
+__end_of_lcd_puts        text1        0595
+__end_of_main            maintext     0759
+__end_ofmain@HKTT        strings      0063
+__end_ofmain@MSSV        strings      0049
+__end_ofmain@class       strings      0056
+__end_ofmain@your_born   strings      002B
+__end_ofmain@your_live   strings      001A
+__end_ofmain@your_name   strings      003B
 __initialization         cinit        07FC
 __pcstackBANK0           cstackBANK0  0020
 __pcstackCOMMON          cstackCOMMON 0070
-__pmaintext              maintext     06B8
+__pmaintext              maintext     06C4
 __pstrings               strings      0003
-__ptext1                 text1        05C2
-__ptext2                 text2        06FD
-__ptext3                 text3        05E5
+__ptext1                 text1        0572
+__ptext2                 text2        0668
+__ptext3                 text3        0595
 __ptext4                 text4        0759
-__ptext5                 text5        063B
-__ptext6                 text6        0674
-__ptext7                 text7        060B
+__ptext5                 text5        05EB
+__ptext6                 text6        0624
+__ptext7                 text7        05BB
 __size_of_lcd_busy       (abs)        0000
 __size_of_lcd_gotoxy     (abs)        0000
 __size_of_lcd_init       (abs)        0000
@@ -273,14 +279,14 @@ __size_of_lcd_puts       (abs)        0000
 __size_of_main           (abs)        0000
 __stringbase             strings      0008
 __stringtab              strings      0003
-_lcd_busy                text7        060B
-_lcd_gotoxy              text3        05E5
+_lcd_busy                text7        05BB
+_lcd_gotoxy              text3        0595
 _lcd_init                text4        0759
-_lcd_put_byte            text5        063B
-_lcd_put_nibble          text6        0674
-_lcd_putc                text2        06FD
-_lcd_puts                text1        05C2
-_main                    maintext     06B8
+_lcd_put_byte            text5        05EB
+_lcd_put_nibble          text6        0624
+_lcd_putc                text2        0668
+_lcd_puts                text1        0572
+_main                    maintext     06C4
 btemp                    (abs)        007E
 end_of_initialization    cinit        07FC
 intlevel0                functab      0000
@@ -299,6 +305,12 @@ lcd_put_nibble@b         cstackCOMMON 0071
 lcd_put_nibble@temp      cstackCOMMON 0072
 lcd_putc@c               cstackCOMMON 007C
 lcd_puts@s               cstackBANK0  0020
+main@HKTT                strings      0056
+main@MSSV                strings      003B
+main@class               strings      0049
+main@your_born           strings      001A
+main@your_live           strings      0009
+main@your_name           strings      002B
 reset_vec                reset_vec    0000
 start                    init         0000
 start_initialization     cinit        07FC
@@ -308,25 +320,31 @@ wtemp0                   (abs)        007E
 MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
-../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-		_lcd_busy      		CODE           	060B	0000	48
-		_lcd_putc      		CODE           	06FD	0000	92
-		_lcd_puts      		CODE           	05C2	0000	35
-		_lcd_put_byte  		CODE           	063B	0000	57
-		_lcd_put_nibble		CODE           	0674	0000	68
-		_lcd_gotoxy    		CODE           	05E5	0000	38
-		_lcd_init      		CODE           	0759	0000	163
-
-../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c estimated size: 501
-
 newmain.c
-		_main          		CODE           	06B8	0000	69
+		_main          		CODE           	06C4	0000	149
 
-newmain.c estimated size: 69
+newmain.c estimated size: 149
 
 shared
 		__stringtab    		STRING         	0003	0000	6
+		main@your_name 		STRING         	002B	0000	16
+		main@your_live 		STRING         	0009	0000	17
+		main@your_born 		STRING         	001A	0000	17
 		__initialization		CODE           	07FC	0000	1
+		main@MSSV      		STRING         	003B	0000	14
+		main@class     		STRING         	0049	0000	13
+		main@HKTT      		STRING         	0056	0000	13
 
-shared estimated size: 7
+shared estimated size: 97
+
+lcd.c
+		_lcd_busy      		CODE           	05BB	0000	48
+		_lcd_putc      		CODE           	0668	0000	92
+		_lcd_puts      		CODE           	0572	0000	35
+		_lcd_put_byte  		CODE           	05EB	0000	57
+		_lcd_put_nibble		CODE           	0624	0000	68
+		_lcd_gotoxy    		CODE           	0595	0000	38
+		_lcd_init      		CODE           	0759	0000	163
+
+lcd.c estimated size: 501
 

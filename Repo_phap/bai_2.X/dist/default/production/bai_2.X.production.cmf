@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\ssc002\AppData\Local\Temp\xcAsfvc.o
+$C:\Users\ssc002\AppData\Local\Temp\xcAs690.o
 end_init CODE 0 0 0 3 2
 config CONFIG 4 2007 2007 2 2
 $dist/default/production\bai_2.X.production.o
@@ -73,177 +73,177 @@ STRING 800-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\bai_2.X.production.o
-7FC cinit CODE >857:C:\Users\ssc002\AppData\Local\Temp\xcAsfvc.s
-7FC cinit CODE >860:C:\Users\ssc002\AppData\Local\Temp\xcAsfvc.s
-7FC cinit CODE >866:C:\Users\ssc002\AppData\Local\Temp\xcAsfvc.s
-7FC cinit CODE >868:C:\Users\ssc002\AppData\Local\Temp\xcAsfvc.s
-7FD cinit CODE >869:C:\Users\ssc002\AppData\Local\Temp\xcAsfvc.s
-505 text7 CODE >18:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-505 text7 CODE >24:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-508 text7 CODE >25:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-509 text7 CODE >26:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-50A text7 CODE >27:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-50B text7 CODE >29:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-50E text7 CODE >30:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-50F text7 CODE >31:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-514 text7 CODE >32:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-517 text7 CODE >33:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-51C text7 CODE >35:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-522 text7 CODE >37:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-523 text7 CODE >38:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-528 text7 CODE >39:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-52B text7 CODE >40:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-530 text7 CODE >41:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-533 text7 CODE >43:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-534 text7 CODE >44:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-56E text6 CODE >103:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-56F text6 CODE >109:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-572 text6 CODE >110:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-573 text6 CODE >111:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-574 text6 CODE >112:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-575 text6 CODE >114:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-579 text6 CODE >116:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-583 text6 CODE >117:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-58D text6 CODE >118:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-597 text6 CODE >119:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-5A1 text6 CODE >121:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-5A6 text6 CODE >122:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-5A9 text6 CODE >123:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-5AE text6 CODE >124:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-5B1 text6 CODE >125:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-535 text5 CODE >134:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-536 text5 CODE >139:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-539 text5 CODE >140:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-53A text5 CODE >141:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-53B text5 CODE >142:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-53C text5 CODE >144:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-541 text5 CODE >145:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-545 text5 CODE >146:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-545 text5 CODE >147:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-548 text5 CODE >148:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-54D text5 CODE >150:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-550 text5 CODE >151:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-555 text5 CODE >153:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-558 text5 CODE >155:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-55B text5 CODE >155:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-55E text5 CODE >155:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-566 text5 CODE >157:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-56D text5 CODE >158:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-60E text4 CODE >241:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-60E text4 CODE >247:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-611 text4 CODE >248:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-612 text4 CODE >249:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-613 text4 CODE >250:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-614 text4 CODE >251:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-615 text4 CODE >252:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-616 text4 CODE >253:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-617 text4 CODE >255:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-620 text4 CODE >257:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-623 text4 CODE >258:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-624 text4 CODE >259:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-625 text4 CODE >261:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-62B text4 CODE >262:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-634 text4 CODE >263:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-63A text4 CODE >264:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-643 text4 CODE >265:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-649 text4 CODE >266:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-652 text4 CODE >268:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-658 text4 CODE >269:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-65E text4 CODE >269:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-662 text4 CODE >271:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-66C text4 CODE >272:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-672 text4 CODE >272:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-676 text4 CODE >274:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-680 text4 CODE >275:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-686 text4 CODE >275:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-68A text4 CODE >277:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-692 text4 CODE >278:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-698 text4 CODE >278:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-69C text4 CODE >280:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-6A6 text4 CODE >281:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-6AC text4 CODE >281:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-6B0 text4 CODE >282:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-4DF text3 CODE >167:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-4E0 text3 CODE >173:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-4E5 text3 CODE >174:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-4EA text3 CODE >176:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-4EB text3 CODE >178:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-4EF text3 CODE >180:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-4FA text3 CODE >181:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-500 text3 CODE >181:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-504 text3 CODE >182:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-5B2 text2 CODE >190:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-5B3 text2 CODE >195:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-5B4 text2 CODE >198:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-5BC text2 CODE >199:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-5C2 text2 CODE >199:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-5C7 text2 CODE >202:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-5CF text2 CODE >203:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-5D0 text2 CODE >205:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-5DA text2 CODE >206:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-5E0 text2 CODE >206:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-5E5 text2 CODE >211:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-5EF text2 CODE >212:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-5F5 text2 CODE >212:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-5FA text2 CODE >215:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-5FF text2 CODE >215:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-604 text2 CODE >215:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-607 text2 CODE >215:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-60A text2 CODE >215:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-60D text2 CODE >216:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-4BC text1 CODE >224:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-4BF text1 CODE >229:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-4C0 text1 CODE >231:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-4D2 text1 CODE >229:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-4DA text1 CODE >229:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-4DE text1 CODE >233:C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
-6B1 maintext CODE >24:C:\Users\ssc002\AppData\Local\Temp\xcAsfvc.s
-6B1 maintext CODE >24:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-6B1 maintext CODE >43:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-6B6 maintext CODE >45:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-6B9 maintext CODE >46:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-6C3 maintext CODE >47:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-6C9 maintext CODE >47:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-6CE maintext CODE >49:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-6DF maintext CODE >50:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-6E5 maintext CODE >50:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-6E9 maintext CODE >51:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-6EF maintext CODE >48:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-6FA maintext CODE >48:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-6FE maintext CODE >53:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-704 maintext CODE >54:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-70B maintext CODE >55:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-70E maintext CODE >56:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-71B maintext CODE >57:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-723 maintext CODE >57:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-727 maintext CODE >58:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-72F maintext CODE >59:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-735 maintext CODE >60:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-743 maintext CODE >61:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-749 maintext CODE >62:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-750 maintext CODE >64:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-753 maintext CODE >65:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-760 maintext CODE >66:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-768 maintext CODE >66:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-76C maintext CODE >67:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-774 maintext CODE >68:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-777 maintext CODE >69:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-784 maintext CODE >70:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-78C maintext CODE >70:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-790 maintext CODE >71:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-79E maintext CODE >72:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-7A4 maintext CODE >73:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-7AB maintext CODE >75:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-7AE maintext CODE >76:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-7BB maintext CODE >77:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-7C3 maintext CODE >77:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-7C7 maintext CODE >78:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-7CF maintext CODE >79:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-7D2 maintext CODE >80:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-7DF maintext CODE >81:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-7E7 maintext CODE >81:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-7EB maintext CODE >82:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
-7F9 maintext CODE >83:C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
+7FC cinit CODE >857:C:\Users\ssc002\AppData\Local\Temp\xcAs690.s
+7FC cinit CODE >860:C:\Users\ssc002\AppData\Local\Temp\xcAs690.s
+7FC cinit CODE >866:C:\Users\ssc002\AppData\Local\Temp\xcAs690.s
+7FC cinit CODE >868:C:\Users\ssc002\AppData\Local\Temp\xcAs690.s
+7FD cinit CODE >869:C:\Users\ssc002\AppData\Local\Temp\xcAs690.s
+505 text7 CODE >18:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+505 text7 CODE >24:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+508 text7 CODE >25:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+509 text7 CODE >26:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+50A text7 CODE >27:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+50B text7 CODE >29:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+50E text7 CODE >30:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+50F text7 CODE >31:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+514 text7 CODE >32:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+517 text7 CODE >33:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+51C text7 CODE >35:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+522 text7 CODE >37:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+523 text7 CODE >38:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+528 text7 CODE >39:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+52B text7 CODE >40:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+530 text7 CODE >41:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+533 text7 CODE >43:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+534 text7 CODE >44:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+56E text6 CODE >103:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+56F text6 CODE >109:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+572 text6 CODE >110:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+573 text6 CODE >111:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+574 text6 CODE >112:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+575 text6 CODE >114:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+579 text6 CODE >116:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+583 text6 CODE >117:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+58D text6 CODE >118:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+597 text6 CODE >119:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+5A1 text6 CODE >121:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+5A6 text6 CODE >122:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+5A9 text6 CODE >123:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+5AE text6 CODE >124:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+5B1 text6 CODE >125:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+535 text5 CODE >134:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+536 text5 CODE >139:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+539 text5 CODE >140:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+53A text5 CODE >141:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+53B text5 CODE >142:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+53C text5 CODE >144:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+541 text5 CODE >145:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+545 text5 CODE >146:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+545 text5 CODE >147:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+548 text5 CODE >148:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+54D text5 CODE >150:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+550 text5 CODE >151:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+555 text5 CODE >153:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+558 text5 CODE >155:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+55B text5 CODE >155:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+55E text5 CODE >155:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+566 text5 CODE >157:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+56D text5 CODE >158:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+60E text4 CODE >241:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+60E text4 CODE >247:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+611 text4 CODE >248:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+612 text4 CODE >249:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+613 text4 CODE >250:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+614 text4 CODE >251:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+615 text4 CODE >252:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+616 text4 CODE >253:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+617 text4 CODE >255:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+620 text4 CODE >257:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+623 text4 CODE >258:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+624 text4 CODE >259:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+625 text4 CODE >261:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+62B text4 CODE >262:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+634 text4 CODE >263:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+63A text4 CODE >264:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+643 text4 CODE >265:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+649 text4 CODE >266:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+652 text4 CODE >268:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+658 text4 CODE >269:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+65E text4 CODE >269:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+662 text4 CODE >271:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+66C text4 CODE >272:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+672 text4 CODE >272:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+676 text4 CODE >274:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+680 text4 CODE >275:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+686 text4 CODE >275:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+68A text4 CODE >277:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+692 text4 CODE >278:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+698 text4 CODE >278:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+69C text4 CODE >280:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+6A6 text4 CODE >281:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+6AC text4 CODE >281:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+6B0 text4 CODE >282:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+4DF text3 CODE >167:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+4E0 text3 CODE >173:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+4E5 text3 CODE >174:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+4EA text3 CODE >176:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+4EB text3 CODE >178:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+4EF text3 CODE >180:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+4FA text3 CODE >181:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+500 text3 CODE >181:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+504 text3 CODE >182:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+5B2 text2 CODE >190:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+5B3 text2 CODE >195:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+5B4 text2 CODE >198:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+5BC text2 CODE >199:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+5C2 text2 CODE >199:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+5C7 text2 CODE >202:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+5CF text2 CODE >203:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+5D0 text2 CODE >205:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+5DA text2 CODE >206:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+5E0 text2 CODE >206:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+5E5 text2 CODE >211:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+5EF text2 CODE >212:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+5F5 text2 CODE >212:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+5FA text2 CODE >215:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+5FF text2 CODE >215:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+604 text2 CODE >215:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+607 text2 CODE >215:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+60A text2 CODE >215:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+60D text2 CODE >216:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+4BC text1 CODE >224:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+4BF text1 CODE >229:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+4C0 text1 CODE >231:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+4D2 text1 CODE >229:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+4DA text1 CODE >229:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+4DE text1 CODE >233:C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
+6B1 maintext CODE >24:C:\Users\ssc002\AppData\Local\Temp\xcAs690.s
+6B1 maintext CODE >24:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+6B1 maintext CODE >43:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+6B6 maintext CODE >45:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+6B9 maintext CODE >46:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+6C3 maintext CODE >47:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+6C9 maintext CODE >47:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+6CE maintext CODE >49:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+6DF maintext CODE >50:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+6E5 maintext CODE >50:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+6E9 maintext CODE >51:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+6EF maintext CODE >48:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+6FA maintext CODE >48:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+6FE maintext CODE >53:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+704 maintext CODE >54:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+70B maintext CODE >55:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+70E maintext CODE >56:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+71B maintext CODE >57:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+723 maintext CODE >57:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+727 maintext CODE >58:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+72F maintext CODE >59:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+735 maintext CODE >60:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+743 maintext CODE >61:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+749 maintext CODE >62:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+750 maintext CODE >64:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+753 maintext CODE >65:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+760 maintext CODE >66:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+768 maintext CODE >66:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+76C maintext CODE >67:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+774 maintext CODE >68:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+777 maintext CODE >69:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+784 maintext CODE >70:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+78C maintext CODE >70:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+790 maintext CODE >71:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+79E maintext CODE >72:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+7A4 maintext CODE >73:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+7AB maintext CODE >75:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+7AE maintext CODE >76:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+7BB maintext CODE >77:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+7C3 maintext CODE >77:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+7C7 maintext CODE >78:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+7CF maintext CODE >79:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+7D2 maintext CODE >80:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+7DF maintext CODE >81:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+7E7 maintext CODE >81:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+7EB maintext CODE >82:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
+7F9 maintext CODE >83:C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -268,28 +268,28 @@ lcd_gotoxy@col 78 0 COMMON 1 cstackCOMMON dist/default/production\bai_2.X.produc
 lcd_gotoxy@row 76 0 COMMON 1 cstackCOMMON dist/default/production\bai_2.X.production.o
 main@i 24 0 BANK0 1 cstackBANK0 dist/default/production\bai_2.X.production.o
 __Hstrings 0 0 ABS 0 strings -
-___sp 0 0 STACK 2 stack C:\Users\ssc002\AppData\Local\Temp\xcAsfvc.o
+___sp 0 0 STACK 2 stack C:\Users\ssc002\AppData\Local\Temp\xcAs690.o
 _main D62 0 CODE 0 maintext dist/default/production\bai_2.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\bai_2.X.production.o
-start 0 0 CODE 0 init C:\Users\ssc002\AppData\Local\Temp\xcAsfvc.o
+start 0 0 CODE 0 init C:\Users\ssc002\AppData\Local\Temp\xcAs690.o
 lcd_put_nibble@b 71 0 COMMON 1 cstackCOMMON dist/default/production\bai_2.X.production.o
 __size_of_main 0 0 ABS 0 - dist/default/production\bai_2.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
 __end_of_lcd_gotoxy A0A 0 CODE 0 text3 dist/default/production\bai_2.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\ssc002\AppData\Local\Temp\xcAsfvc.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\ssc002\AppData\Local\Temp\xcAsfvc.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\ssc002\AppData\Local\Temp\xcAsfvc.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\ssc002\AppData\Local\Temp\xcAsfvc.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\ssc002\AppData\Local\Temp\xcAsfvc.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\ssc002\AppData\Local\Temp\xcAsfvc.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\ssc002\AppData\Local\Temp\xcAs690.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\ssc002\AppData\Local\Temp\xcAs690.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\ssc002\AppData\Local\Temp\xcAs690.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\ssc002\AppData\Local\Temp\xcAs690.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\ssc002\AppData\Local\Temp\xcAs690.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\ssc002\AppData\Local\Temp\xcAs690.o
 wtemp0 7E 0 ABS 0 - dist/default/production\bai_2.X.production.o
 _lcd_put_nibble ADC 0 CODE 0 text6 dist/default/production\bai_2.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
 __Hclrtext 0 0 ABS 0 clrtext -
 __Lmaintext 0 0 ABS 0 maintext -
 __end_of_lcd_put_nibble B64 0 CODE 0 text6 dist/default/production\bai_2.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\ssc002\AppData\Local\Temp\xcAsfvc.o
-___stacklo 0 0 ABS 0 - C:\Users\ssc002\AppData\Local\Temp\xcAsfvc.o
+___stackhi 0 0 ABS 0 - C:\Users\ssc002\AppData\Local\Temp\xcAs690.o
+___stacklo 0 0 ABS 0 - C:\Users\ssc002\AppData\Local\Temp\xcAs690.o
 start_initialization FF8 0 CODE 0 cinit dist/default/production\bai_2.X.production.o
 __end_ofmain@cgram_dat B4 0 STRING 0 strings dist/default/production\bai_2.X.production.o
 lcd_gotoxy@address 79 0 COMMON 1 cstackCOMMON dist/default/production\bai_2.X.production.o
@@ -301,7 +301,7 @@ _TRISD4 444 0 ABS 0 - dist/default/production\bai_2.X.production.o
 _TRISD5 445 0 ABS 0 - dist/default/production\bai_2.X.production.o
 _TRISD6 446 0 ABS 0 - dist/default/production\bai_2.X.production.o
 _TRISD7 447 0 ABS 0 - dist/default/production\bai_2.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\ssc002\AppData\Local\Temp\xcAsfvc.o
+___int_sp 0 0 STACK 2 stack C:\Users\ssc002\AppData\Local\Temp\xcAs690.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -364,7 +364,7 @@ _lcd_putc B64 0 CODE 0 text2 dist/default/production\bai_2.X.production.o
 _lcd_puts 978 0 CODE 0 text1 dist/default/production\bai_2.X.production.o
 __Lintentry 0 0 CODE 0 intentry -
 __stringtab 6 0 STRING 0 strings dist/default/production\bai_2.X.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\ssc002\AppData\Local\Temp\xcAsfvc.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\ssc002\AppData\Local\Temp\xcAs690.o
 __end_of_lcd_busy A6A 0 CODE 0 text7 dist/default/production\bai_2.X.production.o
 __end_of_lcd_init D62 0 CODE 0 text4 dist/default/production\bai_2.X.production.o
 __end_of_lcd_putc C1C 0 CODE 0 text2 dist/default/production\bai_2.X.production.o

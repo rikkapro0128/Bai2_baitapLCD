@@ -1,4 +1,4 @@
-# 1 "newmain.c"
+# 1 "lcd.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,23 +6,150 @@
 # 1 "<built-in>" 2
 # 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "newmain.c" 2
-
-#pragma config FOSC = HS
-#pragma config WDTE = OFF
-#pragma config PWRTE = OFF
-#pragma config MCLRE = ON
-#pragma config CP = OFF
-#pragma config CPD = OFF
-#pragma config BOREN = OFF
-#pragma config IESO = OFF
-#pragma config FCMEN = OFF
-#pragma config LVP = OFF
+# 1 "lcd.c" 2
 
 
-#pragma config BOR4V = BOR40V
-#pragma config WRT = OFF
 
+
+
+
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdlib.h" 1 3
+
+
+
+
+# 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\__size_t.h" 1 3
+
+
+
+typedef unsigned size_t;
+# 5 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdlib.h" 2 3
+
+# 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\__null.h" 1 3
+# 6 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdlib.h" 2 3
+
+typedef unsigned short wchar_t;
+
+
+
+
+
+
+
+typedef struct {
+ int rem;
+ int quot;
+} div_t;
+typedef struct {
+ unsigned rem;
+ unsigned quot;
+} udiv_t;
+typedef struct {
+ long quot;
+ long rem;
+} ldiv_t;
+typedef struct {
+ unsigned long quot;
+ unsigned long rem;
+} uldiv_t;
+# 65 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdlib.h" 3
+extern double atof(const char *);
+extern double strtod(const char *, const char **);
+extern int atoi(const char *);
+extern unsigned xtoi(const char *);
+extern long atol(const char *);
+
+
+
+extern long strtol(const char *, char **, int);
+
+extern int rand(void);
+extern void srand(unsigned int);
+extern void * calloc(size_t, size_t);
+extern div_t div(int numer, int denom);
+extern udiv_t udiv(unsigned numer, unsigned denom);
+extern ldiv_t ldiv(long numer, long denom);
+extern uldiv_t uldiv(unsigned long numer,unsigned long denom);
+
+
+
+extern unsigned long _lrotl(unsigned long value, unsigned int shift);
+extern unsigned long _lrotr(unsigned long value, unsigned int shift);
+extern unsigned int _rotl(unsigned int value, unsigned int shift);
+extern unsigned int _rotr(unsigned int value, unsigned int shift);
+
+
+
+
+extern void * malloc(size_t);
+extern void free(void *);
+extern void * realloc(void *, size_t);
+
+
+
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\xc8debug.h" 1 3
+# 13 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\xc8debug.h" 3
+#pragma intrinsic(__builtin_software_breakpoint)
+extern void __builtin_software_breakpoint(void);
+# 99 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdlib.h" 2 3
+
+
+
+
+
+extern int atexit(void (*)(void));
+extern char * getenv(const char *);
+extern char ** environ;
+extern int system(char *);
+extern void qsort(void *, size_t, size_t, int (*)(const void *, const void *));
+extern void * bsearch(const void *, void *, size_t, size_t, int(*)(const void *, const void *));
+extern int abs(int);
+extern long labs(long);
+
+extern char * itoa(char * buf, int val, int base);
+extern char * utoa(char * buf, unsigned val, int base);
+
+
+
+
+extern char * ltoa(char * buf, long val, int base);
+extern char * ultoa(char * buf, unsigned long val, int base);
+
+extern char * ftoa(float f, int * status);
+# 8 "lcd.c" 2
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\ctype.h" 1 3
+
+
+
+extern __bit isalpha(char);
+extern __bit isupper(char);
+extern __bit islower(char);
+extern __bit isdigit(char);
+extern __bit isxdigit(char);
+extern __bit isspace(char);
+extern __bit ispunct(char);
+extern __bit isalnum(char);
+extern __bit isprint(char);
+extern __bit isgraph(char);
+extern __bit iscntrl(char);
+
+
+extern char toupper(char);
+extern char tolower(char);
+# 9 "lcd.c" 2
+
+# 1 "./lcd.h" 1
+
+
+
+
+
+
+
+# 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\htc.h" 1 3
 
 
 
@@ -34,33 +161,12 @@ extern double __fpnormalize(double);
 
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\xc8debug.h" 1 3
-# 13 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\xc8debug.h" 3
-#pragma intrinsic(__builtin_software_breakpoint)
-extern void __builtin_software_breakpoint(void);
-# 24 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 2 3
+
 
 
 
 # 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\pic.h" 1 3
-
-
-
-
-# 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\htc.h" 1 3
-
-
-
-# 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 1 3
-# 5 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\htc.h" 2 3
-# 6 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\pic.h" 2 3
-
-
-
-
-
-
-
+# 13 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\pic.h" 3
 # 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\pic_chip_select.h" 1 3
 # 723 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\pic_chip_select.h" 3
 # 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\proc\\pic16f887.h" 1 3
@@ -2506,228 +2612,8 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 28 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 2 3
-# 19 "newmain.c" 2
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\math.h" 1 3
-
-
-
-# 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\__unsupported.h" 1 3
-# 4 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\math.h" 2 3
-# 30 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\math.h" 3
-extern double fabs(double);
-extern double floor(double);
-extern double ceil(double);
-extern double modf(double, double *);
-extern double sqrt(double);
-extern double atof(const char *);
-extern double sin(double) ;
-extern double cos(double) ;
-extern double tan(double) ;
-extern double asin(double) ;
-extern double acos(double) ;
-extern double atan(double);
-extern double atan2(double, double) ;
-extern double log(double);
-extern double log10(double);
-extern double pow(double, double) ;
-extern double exp(double) ;
-extern double sinh(double) ;
-extern double cosh(double) ;
-extern double tanh(double);
-extern double eval_poly(double, const double *, int);
-extern double frexp(double, int *);
-extern double ldexp(double, int);
-extern double fmod(double, double);
-extern double trunc(double);
-extern double round(double);
-# 20 "newmain.c" 2
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdio.h" 1 3
-
-
-
-# 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\__size_t.h" 1 3
-
-
-
-typedef unsigned size_t;
-# 4 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdio.h" 2 3
-
-# 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\__null.h" 1 3
-# 5 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdio.h" 2 3
-
-
-
-
-
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdarg.h" 1 3
-
-
-
-
-
-
-typedef void * va_list[1];
-
-#pragma intrinsic(__va_start)
-extern void * __va_start(void);
-
-#pragma intrinsic(__va_arg)
-extern void * __va_arg(void *, ...);
-# 11 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdio.h" 2 3
-# 43 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdio.h" 3
-struct __prbuf
-{
- char * ptr;
- void (* func)(char);
-};
-# 85 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdio.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\conio.h" 1 3
-
-
-
-
-
-
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\errno.h" 1 3
-# 29 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\errno.h" 3
-extern int errno;
-# 8 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\conio.h" 2 3
-
-
-
-
-extern void init_uart(void);
-
-extern char getch(void);
-extern char getche(void);
-extern void putch(char);
-extern void ungetch(char);
-
-extern __bit kbhit(void);
-
-
-
-extern char * cgets(char *);
-extern void cputs(const char *);
-# 85 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdio.h" 2 3
-
-
-
-extern int cprintf(char *, ...);
-#pragma printf_check(cprintf)
-
-
-
-extern int _doprnt(struct __prbuf *, const register char *, register va_list);
-# 180 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdio.h" 3
-#pragma printf_check(vprintf) const
-#pragma printf_check(vsprintf) const
-
-extern char * gets(char *);
-extern int puts(const char *);
-extern int scanf(const char *, ...) __attribute__((unsupported("scanf() is not supported by this compiler")));
-extern int sscanf(const char *, const char *, ...) __attribute__((unsupported("sscanf() is not supported by this compiler")));
-extern int vprintf(const char *, va_list) __attribute__((unsupported("vprintf() is not supported by this compiler")));
-extern int vsprintf(char *, const char *, va_list) __attribute__((unsupported("vsprintf() is not supported by this compiler")));
-extern int vscanf(const char *, va_list ap) __attribute__((unsupported("vscanf() is not supported by this compiler")));
-extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupported("vsscanf() is not supported by this compiler")));
-
-#pragma printf_check(printf) const
-#pragma printf_check(sprintf) const
-extern int sprintf(char *, const char *, ...);
-extern int printf(const char *, ...);
-# 21 "newmain.c" 2
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdlib.h" 1 3
-
-
-
-
-
-
-typedef unsigned short wchar_t;
-
-
-
-
-
-
-
-typedef struct {
- int rem;
- int quot;
-} div_t;
-typedef struct {
- unsigned rem;
- unsigned quot;
-} udiv_t;
-typedef struct {
- long quot;
- long rem;
-} ldiv_t;
-typedef struct {
- unsigned long quot;
- unsigned long rem;
-} uldiv_t;
-# 65 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdlib.h" 3
-extern double atof(const char *);
-extern double strtod(const char *, const char **);
-extern int atoi(const char *);
-extern unsigned xtoi(const char *);
-extern long atol(const char *);
-
-
-
-extern long strtol(const char *, char **, int);
-
-extern int rand(void);
-extern void srand(unsigned int);
-extern void * calloc(size_t, size_t);
-extern div_t div(int numer, int denom);
-extern udiv_t udiv(unsigned numer, unsigned denom);
-extern ldiv_t ldiv(long numer, long denom);
-extern uldiv_t uldiv(unsigned long numer,unsigned long denom);
-
-
-
-extern unsigned long _lrotl(unsigned long value, unsigned int shift);
-extern unsigned long _lrotr(unsigned long value, unsigned int shift);
-extern unsigned int _rotl(unsigned int value, unsigned int shift);
-extern unsigned int _rotr(unsigned int value, unsigned int shift);
-
-
-
-
-extern void * malloc(size_t);
-extern void free(void *);
-extern void * realloc(void *, size_t);
-# 104 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdlib.h" 3
-extern int atexit(void (*)(void));
-extern char * getenv(const char *);
-extern char ** environ;
-extern int system(char *);
-extern void qsort(void *, size_t, size_t, int (*)(const void *, const void *));
-extern void * bsearch(const void *, void *, size_t, size_t, int(*)(const void *, const void *));
-extern int abs(int);
-extern long labs(long);
-
-extern char * itoa(char * buf, int val, int base);
-extern char * utoa(char * buf, unsigned val, int base);
-
-
-
-
-extern char * ltoa(char * buf, long val, int base);
-extern char * ultoa(char * buf, unsigned long val, int base);
-
-extern char * ftoa(float f, int * status);
-# 22 "newmain.c" 2
-
-# 1 "./lcd.h" 1
+# 5 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\htc.h" 2 3
+# 8 "./lcd.h" 2
 # 55 "./lcd.h"
 typedef union _BYTE_VAL
  {
@@ -2759,33 +2645,345 @@ typedef union _BYTE_VAL
  void lcd_MoveRight(unsigned char p);
  void lcd_MoveLeft(unsigned char p);
  void lcd_String_Delay(unsigned char*s,unsigned int dly);
-# 23 "newmain.c" 2
+# 10 "lcd.c" 2
 
 
-void main(void) {
-    const char your_name[] = "Trinh Kieu Oanh";
-    const char your_born[] = "NgaySinh:10/2001";
-    const char your_live[] = "NoiSinh:Dong Nai";
-    const char HKTT[] = "HKTT: Go Vap";
-    const char class[] = "Lop: DTVT15A";
-    const char MSSV[] = "MSSV:19471301";
-    lcd_init();
-    lcd_putc('\f');
-    lcd_gotoxy(0, 0);
-    lcd_puts(your_name);
-    lcd_gotoxy(0, 1);
-    lcd_puts(MSSV);
-    _delay((unsigned long)((2000)*(4000000/4000.0)));
-    lcd_putc('\f');
-    lcd_gotoxy(0, 0);
-    lcd_puts(your_born);
-    lcd_gotoxy(0, 1);
-    lcd_puts(your_live);
-    _delay((unsigned long)((2000)*(4000000/4000.0)));
-    lcd_putc('\f');
-    lcd_gotoxy(0, 0);
-    lcd_puts(HKTT);
-    lcd_gotoxy(0, 1);
-    lcd_puts(class);
-    _delay((unsigned long)((2000)*(4000000/4000.0)));
+
+
+
+
+
+
+unsigned char lcd_busy()
+{
+
+unsigned char busy;
+
+
+ TRISD4 = 1;
+ TRISD5 = 1;
+ TRISD6 = 1;
+ TRISD7 = 1;
+
+ RD2 = 1;
+ RD1 = 0;
+ _delay((unsigned long)((20)*(4000000/4000000.0)));
+ RD3 = 1;
+ _delay((unsigned long)((20)*(4000000/4000000.0)));
+
+ busy = RD7;
+
+ RD3 = 0;
+ _delay((unsigned long)((20)*(4000000/4000000.0)));
+ RD3 = 1;
+ _delay((unsigned long)((20)*(4000000/4000000.0)));
+ RD3 = 0;
+
+ return busy;
+}
+# 53 "lcd.c"
+unsigned char lcd_get_byte(unsigned char rs)
+{
+
+ BYTE_VAL b;
+
+
+ TRISD4 = 1;
+ TRISD5 = 1;
+ TRISD6 = 1;
+ TRISD7 = 1;
+
+ RD2 = 1;
+
+ if(rs)
+  RD1 = 1;
+ else
+  RD1 = 0;
+ _delay((unsigned long)((20)*(4000000/4000000.0)));
+
+ RD3 = 1;
+ _delay((unsigned long)((20)*(4000000/4000000.0)));
+
+ b.bits.b7 = RD7;
+ b.bits.b6 = RD6;
+ b.bits.b5 = RD5;
+ b.bits.b4 = RD4;
+
+ RD3 = 0;
+ _delay((unsigned long)((20)*(4000000/4000000.0)));
+
+ RD3 = 1;
+ _delay((unsigned long)((20)*(4000000/4000000.0)));
+
+ b.bits.b3 = RD7;
+ b.bits.b2 = RD6;
+ b.bits.b1 = RD5;
+ b.bits.b0 = RD4;
+
+ RD3 = 0;
+ _delay((unsigned long)((20)*(4000000/4000000.0)));
+
+ return b.Val;
+}
+
+
+
+
+
+
+
+void lcd_put_nibble(unsigned char b)
+{
+
+ BYTE_VAL temp;
+
+
+ TRISD4 = 0;
+ TRISD5 = 0;
+ TRISD6 = 0;
+ TRISD7 = 0;
+
+ temp.Val = b;
+
+ RD4 = temp.bits.b0;
+ RD5 = temp.bits.b1;
+ RD6 = temp.bits.b2;
+ RD7 = temp.bits.b3;
+
+ _delay((unsigned long)((20)*(4000000/4000000.0)));
+ RD3 = 1;
+ _delay((unsigned long)((20)*(4000000/4000000.0)));
+ RD3 = 0;
+}
+# 134 "lcd.c"
+void lcd_put_byte(unsigned char rs, unsigned char b)
+{
+
+
+
+ TRISD4 = 0;
+ TRISD5 = 0;
+ TRISD6 = 0;
+ TRISD7 = 0;
+
+ if(rs)
+  RD1 = 1;
+ else
+  RD1 = 0;
+ _delay((unsigned long)((20)*(4000000/4000000.0)));
+
+ RD2 = 0;
+ _delay((unsigned long)((20)*(4000000/4000000.0)));
+
+ RD3 = 0;
+
+ lcd_put_nibble(b >> 4);
+
+ lcd_put_nibble(b & 0xf);
+}
+# 167 "lcd.c"
+void lcd_gotoxy(unsigned char col, unsigned char row)
+{
+
+ unsigned char address;
+
+
+ if(row!=0)
+  address=0x40;
+ else
+  address=0;
+
+ address += col;
+
+ lcd_put_byte(0,0x80|address);
+ while(lcd_busy());
+}
+
+
+
+
+
+
+
+void lcd_putc(char c)
+{
+
+
+
+ switch(c)
+  {
+  case '\f':
+   lcd_put_byte(0,1);
+   while(lcd_busy());
+   break;
+  case '\n':
+   lcd_gotoxy(0,1);
+   break;
+  case '\b':
+   lcd_put_byte(0,0x10);
+   while(lcd_busy());
+   break;
+  default:
+
+    {
+    lcd_put_byte(1,c);
+    while(lcd_busy());
+    }
+
+  }
+}
+
+
+
+
+
+
+
+void lcd_puts(const char* s)
+{
+
+
+
+ while(*s)
+  {
+  lcd_putc(*s++);
+  }
+}
+
+
+
+
+
+
+
+void lcd_init()
+{
+
+unsigned char i;
+
+
+ TRISD3 = 0;
+ TRISD1 = 0;
+ TRISD2 = 0;
+ TRISD4 = 0;
+ TRISD5 = 0;
+ TRISD6 = 0;
+ TRISD7 = 0;
+
+ _delay((unsigned long)((15)*(4000000/4000.0)));
+
+ RD1 = 0;
+ RD2 = 0;
+ RD3 = 0;
+
+ lcd_put_nibble(3);
+ _delay((unsigned long)((10)*(4000000/4000.0)));
+ lcd_put_nibble(3);
+ _delay((unsigned long)((10)*(4000000/4000.0)));
+ lcd_put_nibble(3);
+ _delay((unsigned long)((10)*(4000000/4000.0)));
+
+ lcd_put_nibble(2);
+ while(lcd_busy());
+
+ lcd_put_byte(0,0b00101100 & 0b00111000);
+ while(lcd_busy());
+
+ lcd_put_byte(0,0b00001111 & 0b00001101 & 0b00001110);
+ while(lcd_busy());
+
+ lcd_put_byte(0,0x01);
+ while(lcd_busy());
+
+ lcd_put_byte(0,0b00000110);
+ while(lcd_busy());
+}
+
+
+
+
+
+
+
+void lcd_ShiftLeft(void)
+{
+
+
+
+     lcd_put_byte(0,0x18);
+}
+
+
+
+
+
+
+
+void lcd_ShiftRight(void)
+{
+
+
+
+     lcd_put_byte(0,0x1C);
+}
+
+
+
+
+
+
+
+void lcd_MoveRight(unsigned char p)
+{
+
+unsigned char i;
+
+
+ for(i=0;i<p;i++)
+  {
+  lcd_ShiftRight();
+        _delay((unsigned long)((100)*(4000000/4000.0)));
+      }
+}
+
+
+
+
+
+
+
+void lcd_MoveLeft(unsigned char p)
+{
+
+unsigned char i;
+
+
+ for(i=0;i<p;i++)
+  {
+     lcd_ShiftLeft();
+        _delay((unsigned long)((100)*(4000000/4000.0)));
+  }
+}
+
+
+
+
+
+
+
+void lcd_String_Delay(unsigned char*s, unsigned int dly)
+ {
+
+
+
+ while(*s!=0)
+  {
+  lcd_putc(*s++);
+
+     }
+}
+
+void putch(char c)
+{
+    lcd_putc(c);
 }

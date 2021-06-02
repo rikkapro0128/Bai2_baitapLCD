@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.32 build 20210201212658 
-                                                                                               Mon May 31 11:07:10 2021
+                                                                                               Wed Jun 02 16:34:31 2021
 
 Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1 
      1                           	processor	16F887
@@ -1029,7 +1029,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1009  04BC                     __ptext1:	
   1010 ;; *************** function _lcd_puts *****************
   1011 ;; Defined at:
-  1012 ;;		line 224 in file "../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c"
+  1012 ;;		line 224 in file "../../Repo_oanh/bai_2.X/lcd.c"
   1013 ;; Parameters:    Size  Location     Type
   1014 ;;  s               1    wreg     PTR const unsigned char 
   1015 ;;		 -> main@MSSV(14), 
@@ -1071,14 +1071,13 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1051  04BE  00A0               	movwf	lcd_puts@s
   1052  04BF                     l1217:
   1053                           
-  1054                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 224: void lcd_puts(const char* 
-      +                          s);../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 225: {;../../../Documents/Thu
-      +                           vien lcd/Thu vien lcd/PIC/lcd.c: 229:  while(*s)
+  1054                           ;../../Repo_oanh/bai_2.X/lcd.c: 224: void lcd_puts(const char* s);../../Repo_oanh/bai_2.
+      +                          X/lcd.c: 225: {;../../Repo_oanh/bai_2.X/lcd.c: 229:  while(*s)
   1055  04BF  2CD2               	goto	l1223
   1056  04C0                     l1219:
   1057                           
-  1058                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 230:   {;../../../Documents/Thu
-      +                           vien lcd/Thu vien lcd/PIC/lcd.c: 231:   lcd_putc(*s++);
+  1058                           ;../../Repo_oanh/bai_2.X/lcd.c: 230:   {;../../Repo_oanh/bai_2.X/lcd.c: 231:   lcd_putc(
+      +                          *s++);
   1059  04C0  0820               	movf	lcd_puts@s,w
   1060  04C1  0084               	movwf	4
   1061  04C2  120A  118A  2003  120A  118A  	fcall	stringdir
@@ -1092,7 +1091,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1069  04D1  07A0               	addwf	lcd_puts@s,f
   1070  04D2                     l1223:
   1071                           
-  1072                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 229:  while(*s)
+  1072                           ;../../Repo_oanh/bai_2.X/lcd.c: 229:  while(*s)
   1073  04D2  0820               	movf	lcd_puts@s,w
   1074  04D3  0084               	movwf	4
   1075  04D4  120A  118A  2003  120A  118A  	fcall	stringdir
@@ -1111,7 +1110,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1088  05B2                     __ptext2:	
   1089 ;; *************** function _lcd_putc *****************
   1090 ;; Defined at:
-  1091 ;;		line 190 in file "../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c"
+  1091 ;;		line 190 in file "../../Repo_oanh/bai_2.X/lcd.c"
   1092 ;; Parameters:    Size  Location     Type
   1093 ;;  c               1    wreg     unsigned char 
   1094 ;; Auto vars:     Size  Location     Type
@@ -1154,19 +1153,18 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1131  05B2  00FC               	movwf	lcd_putc@c
   1132  05B3                     l1157:
   1133                           
-  1134                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 190: void lcd_putc(char c);../.
-      +                          ./../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 191: {;../../../Documents/Thu vien l
-      +                          cd/Thu vien lcd/PIC/lcd.c: 195:  switch(c)
+  1134                           ;../../Repo_oanh/bai_2.X/lcd.c: 190: void lcd_putc(char c);../../Repo_oanh/bai_2.X/lcd.c
+      +                          : 191: {;../../Repo_oanh/bai_2.X/lcd.c: 195:  switch(c)
   1135  05B3  2DFA               	goto	l1173
   1136  05B4                     l1159:
   1137                           
-  1138                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 198:    lcd_put_byte(0,1);
+  1138                           ;../../Repo_oanh/bai_2.X/lcd.c: 198:    lcd_put_byte(0,1);
   1139  05B4  01F3               	clrf	lcd_put_byte@b
   1140  05B5  0AF3               	incf	lcd_put_byte@b,f
   1141  05B6  3000               	movlw	0
   1142  05B7  120A  118A  2535  120A  118A  	fcall	_lcd_put_byte
   1143  05BC                     l1161:	
-  1144                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 199:    while(lcd_busy());
+  1144                           ;../../Repo_oanh/bai_2.X/lcd.c: 199:    while(lcd_busy());
   1145                           
   1146  05BC  120A  118A  2505  120A  118A  	fcall	_lcd_busy
   1147  05C1  3A00               	xorlw	0
@@ -1179,17 +1177,17 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1154  05C6  2E0D               	goto	l124
   1155  05C7                     l1163:
   1156                           
-  1157                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 202:    lcd_gotoxy(0,1);
+  1157                           ;../../Repo_oanh/bai_2.X/lcd.c: 202:    lcd_gotoxy(0,1);
   1158  05C7  01F6               	clrf	lcd_gotoxy@row
   1159  05C8  0AF6               	incf	lcd_gotoxy@row,f
   1160  05C9  3000               	movlw	0
   1161  05CA  120A  118A  24DF  120A  118A  	fcall	_lcd_gotoxy
   1162                           
-  1163                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 203:    break;
+  1163                           ;../../Repo_oanh/bai_2.X/lcd.c: 203:    break;
   1164  05CF  2E0D               	goto	l124
   1165  05D0                     l1165:
   1166                           
-  1167                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 205:    lcd_put_byte(0,0x10);
+  1167                           ;../../Repo_oanh/bai_2.X/lcd.c: 205:    lcd_put_byte(0,0x10);
   1168  05D0  3010               	movlw	16
   1169  05D1  00FA               	movwf	??_lcd_putc
   1170  05D2  087A               	movf	??_lcd_putc,w
@@ -1197,7 +1195,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1172  05D4  3000               	movlw	0
   1173  05D5  120A  118A  2535  120A  118A  	fcall	_lcd_put_byte
   1174  05DA                     l1167:	
-  1175                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 206:    while(lcd_busy());
+  1175                           ;../../Repo_oanh/bai_2.X/lcd.c: 206:    while(lcd_busy());
   1176                           
   1177  05DA  120A  118A  2505  120A  118A  	fcall	_lcd_busy
   1178  05DF  3A00               	xorlw	0
@@ -1210,8 +1208,8 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1185  05E4  2E0D               	goto	l124
   1186  05E5                     l1169:
   1187                           
-  1188                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 210:     {;../../../Documents/T
-      +                          hu vien lcd/Thu vien lcd/PIC/lcd.c: 211:     lcd_put_byte(1,c);
+  1188                           ;../../Repo_oanh/bai_2.X/lcd.c: 210:     {;../../Repo_oanh/bai_2.X/lcd.c: 211:     lcd_p
+      +                          ut_byte(1,c);
   1189  05E5  087C               	movf	lcd_putc@c,w
   1190  05E6  00FA               	movwf	??_lcd_putc
   1191  05E7  087A               	movf	??_lcd_putc,w
@@ -1219,7 +1217,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1193  05E9  3001               	movlw	1
   1194  05EA  120A  118A  2535  120A  118A  	fcall	_lcd_put_byte
   1195  05EF                     l1171:	
-  1196                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 212:     while(lcd_busy());
+  1196                           ;../../Repo_oanh/bai_2.X/lcd.c: 212:     while(lcd_busy());
   1197                           
   1198  05EF  120A  118A  2505  120A  118A  	fcall	_lcd_busy
   1199  05F4  3A00               	xorlw	0
@@ -1279,7 +1277,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1252  04DF                     __ptext3:	
   1253 ;; *************** function _lcd_gotoxy *****************
   1254 ;; Defined at:
-  1255 ;;		line 167 in file "../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c"
+  1255 ;;		line 167 in file "../../Repo_oanh/bai_2.X/lcd.c"
   1256 ;; Parameters:    Size  Location     Type
   1257 ;;  col             1    wreg     unsigned char 
   1258 ;;  row             1    6[COMMON] unsigned char 
@@ -1321,10 +1319,9 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1294  04DF  00F8               	movwf	lcd_gotoxy@col
   1295  04E0                     l1145:
   1296                           
-  1297                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 167: void lcd_gotoxy(unsigned c
-      +                          har col, unsigned char row);../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 168:
-      +                           {;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 170:  unsigned char address;;
-      +                          ../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 173:  if(row!=0)
+  1297                           ;../../Repo_oanh/bai_2.X/lcd.c: 167: void lcd_gotoxy(unsigned char col, unsigned char ro
+      +                          w);../../Repo_oanh/bai_2.X/lcd.c: 168: {;../../Repo_oanh/bai_2.X/lcd.c: 170:  unsigned c
+      +                          har address;;../../Repo_oanh/bai_2.X/lcd.c: 173:  if(row!=0)
   1298  04E0  0876               	movf	lcd_gotoxy@row,w
   1299  04E1  1903               	btfsc	3,2
   1300  04E2  2CE4               	goto	u521
@@ -1334,7 +1331,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1304  04E5                     u520:
   1305  04E5                     l1147:
   1306                           
-  1307                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 174:   address=0x40;
+  1307                           ;../../Repo_oanh/bai_2.X/lcd.c: 174:   address=0x40;
   1308  04E5  3040               	movlw	64
   1309  04E6  00F7               	movwf	??_lcd_gotoxy
   1310  04E7  0877               	movf	??_lcd_gotoxy,w
@@ -1342,19 +1339,18 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1312  04E9  2CEB               	goto	l1151
   1313  04EA                     l1149:
   1314                           
-  1315                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 176:   address=0;
+  1315                           ;../../Repo_oanh/bai_2.X/lcd.c: 176:   address=0;
   1316  04EA  01F9               	clrf	lcd_gotoxy@address
   1317  04EB                     l1151:
   1318                           
-  1319                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 178:  address += col;
+  1319                           ;../../Repo_oanh/bai_2.X/lcd.c: 178:  address += col;
   1320  04EB  0878               	movf	lcd_gotoxy@col,w
   1321  04EC  00F7               	movwf	??_lcd_gotoxy
   1322  04ED  0877               	movf	??_lcd_gotoxy,w
   1323  04EE  07F9               	addwf	lcd_gotoxy@address,f
   1324  04EF                     l1153:
   1325                           
-  1326                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 180:  lcd_put_byte(0,0x80|addre
-      +                          ss);
+  1326                           ;../../Repo_oanh/bai_2.X/lcd.c: 180:  lcd_put_byte(0,0x80|address);
   1327  04EF  0879               	movf	lcd_gotoxy@address,w
   1328  04F0  3880               	iorlw	128
   1329  04F1  00F7               	movwf	??_lcd_gotoxy
@@ -1363,7 +1359,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1332  04F4  3000               	movlw	0
   1333  04F5  120A  118A  2535  120A  118A  	fcall	_lcd_put_byte
   1334  04FA                     l1155:	
-  1335                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 181:  while(lcd_busy());
+  1335                           ;../../Repo_oanh/bai_2.X/lcd.c: 181:  while(lcd_busy());
   1336                           
   1337  04FA  120A  118A  2505  120A  118A  	fcall	_lcd_busy
   1338  04FF  3A00               	xorlw	0
@@ -1381,7 +1377,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1350  060E                     __ptext4:	
   1351 ;; *************** function _lcd_init *****************
   1352 ;; Defined at:
-  1353 ;;		line 241 in file "../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c"
+  1353 ;;		line 241 in file "../../Repo_oanh/bai_2.X/lcd.c"
   1354 ;; Parameters:    Size  Location     Type
   1355 ;;		None
   1356 ;; Auto vars:     Size  Location     Type
@@ -1419,33 +1415,32 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1388                           ; Regs used in _lcd_init: [wreg+status,2+status,0+pclath+cstack]
   1389                           
   1390                           
-  1391                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 244: unsigned char i;;../../../
-      +                          Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 247:  TRISD3 = 0;
+  1391                           ;../../Repo_oanh/bai_2.X/lcd.c: 244: unsigned char i;;../../Repo_oanh/bai_2.X/lcd.c: 247
+      +                          :  TRISD3 = 0;
   1392  060E  1683               	bsf	3,5	;RP0=1, select bank1
   1393  060F  1303               	bcf	3,6	;RP1=0, select bank1
   1394  0610  1188               	bcf	8,3	;volatile
   1395                           
-  1396                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 248:  TRISD1 = 0;
+  1396                           ;../../Repo_oanh/bai_2.X/lcd.c: 248:  TRISD1 = 0;
   1397  0611  1088               	bcf	8,1	;volatile
   1398                           
-  1399                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 249:  TRISD2 = 0;
+  1399                           ;../../Repo_oanh/bai_2.X/lcd.c: 249:  TRISD2 = 0;
   1400  0612  1108               	bcf	8,2	;volatile
   1401                           
-  1402                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 250:  TRISD4 = 0;
+  1402                           ;../../Repo_oanh/bai_2.X/lcd.c: 250:  TRISD4 = 0;
   1403  0613  1208               	bcf	8,4	;volatile
   1404                           
-  1405                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 251:  TRISD5 = 0;
+  1405                           ;../../Repo_oanh/bai_2.X/lcd.c: 251:  TRISD5 = 0;
   1406  0614  1288               	bcf	8,5	;volatile
   1407                           
-  1408                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 252:  TRISD6 = 0;
+  1408                           ;../../Repo_oanh/bai_2.X/lcd.c: 252:  TRISD6 = 0;
   1409  0615  1308               	bcf	8,6	;volatile
   1410                           
-  1411                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 253:  TRISD7 = 0;
+  1411                           ;../../Repo_oanh/bai_2.X/lcd.c: 253:  TRISD7 = 0;
   1412  0616  1388               	bcf	8,7	;volatile
   1413  0617                     l1181:
   1414                           
-  1415                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 255:  _delay((unsigned long)((1
-      +                          5)*(4000000/4000.0)));
+  1415                           ;../../Repo_oanh/bai_2.X/lcd.c: 255:  _delay((unsigned long)((15)*(4000000/4000.0)));
   1416  0617  3014               	movlw	20
   1417  0618  00F7               	movwf	??_lcd_init+1
   1418  0619  3079               	movlw	121
@@ -1458,27 +1453,26 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1425  061F  2E20               	nop2
   1426  0620                     l1183:
   1427                           
-  1428                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 257:  RD1 = 0;
+  1428                           ;../../Repo_oanh/bai_2.X/lcd.c: 257:  RD1 = 0;
   1429  0620  1283               	bcf	3,5	;RP0=0, select bank0
   1430  0621  1303               	bcf	3,6	;RP1=0, select bank0
   1431  0622  1088               	bcf	8,1	;volatile
   1432  0623                     l1185:
   1433                           
-  1434                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 258:  RD2 = 0;
+  1434                           ;../../Repo_oanh/bai_2.X/lcd.c: 258:  RD2 = 0;
   1435  0623  1108               	bcf	8,2	;volatile
   1436  0624                     l1187:
   1437                           
-  1438                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 259:  RD3 = 0;
+  1438                           ;../../Repo_oanh/bai_2.X/lcd.c: 259:  RD3 = 0;
   1439  0624  1188               	bcf	8,3	;volatile
   1440  0625                     l1189:
   1441                           
-  1442                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 261:  lcd_put_nibble(3);
+  1442                           ;../../Repo_oanh/bai_2.X/lcd.c: 261:  lcd_put_nibble(3);
   1443  0625  3003               	movlw	3
   1444  0626  120A  118A  256E  120A  118A  	fcall	_lcd_put_nibble
   1445  062B                     l1191:
   1446                           
-  1447                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 262:  _delay((unsigned long)((1
-      +                          0)*(4000000/4000.0)));
+  1447                           ;../../Repo_oanh/bai_2.X/lcd.c: 262:  _delay((unsigned long)((10)*(4000000/4000.0)));
   1448  062B  300D               	movlw	13
   1449  062C  00F7               	movwf	??_lcd_init+1
   1450  062D  30FB               	movlw	251
@@ -1490,13 +1484,12 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1456  0632  2E2F               	goto	u787
   1457  0633  2E34               	nop2
   1458                           
-  1459                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 263:  lcd_put_nibble(3);
+  1459                           ;../../Repo_oanh/bai_2.X/lcd.c: 263:  lcd_put_nibble(3);
   1460  0634  3003               	movlw	3
   1461  0635  120A  118A  256E  120A  118A  	fcall	_lcd_put_nibble
   1462  063A                     l1193:
   1463                           
-  1464                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 264:  _delay((unsigned long)((1
-      +                          0)*(4000000/4000.0)));
+  1464                           ;../../Repo_oanh/bai_2.X/lcd.c: 264:  _delay((unsigned long)((10)*(4000000/4000.0)));
   1465  063A  300D               	movlw	13
   1466  063B  00F7               	movwf	??_lcd_init+1
   1467  063C  30FB               	movlw	251
@@ -1509,12 +1502,11 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1474  0642  2E43               	nop2
   1475  0643                     l1195:
   1476                           
-  1477                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 265:  lcd_put_nibble(3);
+  1477                           ;../../Repo_oanh/bai_2.X/lcd.c: 265:  lcd_put_nibble(3);
   1478  0643  3003               	movlw	3
   1479  0644  120A  118A  256E  120A  118A  	fcall	_lcd_put_nibble
   1480                           
-  1481                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 266:  _delay((unsigned long)((1
-      +                          0)*(4000000/4000.0)));
+  1481                           ;../../Repo_oanh/bai_2.X/lcd.c: 266:  _delay((unsigned long)((10)*(4000000/4000.0)));
   1482  0649  300D               	movlw	13
   1483  064A  00F7               	movwf	??_lcd_init+1
   1484  064B  30FB               	movlw	251
@@ -1527,11 +1519,11 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1491  0651  2E52               	nop2
   1492  0652                     l1197:
   1493                           
-  1494                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 268:  lcd_put_nibble(2);
+  1494                           ;../../Repo_oanh/bai_2.X/lcd.c: 268:  lcd_put_nibble(2);
   1495  0652  3002               	movlw	2
   1496  0653  120A  118A  256E  120A  118A  	fcall	_lcd_put_nibble
   1497  0658                     l1199:	
-  1498                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 269:  while(lcd_busy());
+  1498                           ;../../Repo_oanh/bai_2.X/lcd.c: 269:  while(lcd_busy());
   1499                           
   1500  0658  120A  118A  2505  120A  118A  	fcall	_lcd_busy
   1501  065D  3A00               	xorlw	0
@@ -1543,8 +1535,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1507  0662                     u570:
   1508  0662                     l1201:
   1509                           
-  1510                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 271:  lcd_put_byte(0,0b00101100
-      +                           & 0b00111000);
+  1510                           ;../../Repo_oanh/bai_2.X/lcd.c: 271:  lcd_put_byte(0,0b00101100 & 0b00111000);
   1511  0662  3028               	movlw	40
   1512  0663  00F6               	movwf	??_lcd_init
   1513  0664  0876               	movf	??_lcd_init,w
@@ -1552,7 +1543,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1515  0666  3000               	movlw	0
   1516  0667  120A  118A  2535  120A  118A  	fcall	_lcd_put_byte
   1517  066C                     l1203:	
-  1518                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 272:  while(lcd_busy());
+  1518                           ;../../Repo_oanh/bai_2.X/lcd.c: 272:  while(lcd_busy());
   1519                           
   1520  066C  120A  118A  2505  120A  118A  	fcall	_lcd_busy
   1521  0671  3A00               	xorlw	0
@@ -1564,8 +1555,8 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1527  0676                     u580:
   1528  0676                     l1205:
   1529                           
-  1530                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 274:  lcd_put_byte(0,0b00001111
-      +                           & 0b00001101 & 0b00001110);
+  1530                           ;../../Repo_oanh/bai_2.X/lcd.c: 274:  lcd_put_byte(0,0b00001111 & 0b00001101 & 0b0000111
+      +                          0);
   1531  0676  300C               	movlw	12
   1532  0677  00F6               	movwf	??_lcd_init
   1533  0678  0876               	movf	??_lcd_init,w
@@ -1573,7 +1564,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1535  067A  3000               	movlw	0
   1536  067B  120A  118A  2535  120A  118A  	fcall	_lcd_put_byte
   1537  0680                     l1207:	
-  1538                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 275:  while(lcd_busy());
+  1538                           ;../../Repo_oanh/bai_2.X/lcd.c: 275:  while(lcd_busy());
   1539                           
   1540  0680  120A  118A  2505  120A  118A  	fcall	_lcd_busy
   1541  0685  3A00               	xorlw	0
@@ -1585,13 +1576,13 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1547  068A                     u590:
   1548  068A                     l1209:
   1549                           
-  1550                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 277:  lcd_put_byte(0,0x01);
+  1550                           ;../../Repo_oanh/bai_2.X/lcd.c: 277:  lcd_put_byte(0,0x01);
   1551  068A  01F3               	clrf	lcd_put_byte@b
   1552  068B  0AF3               	incf	lcd_put_byte@b,f
   1553  068C  3000               	movlw	0
   1554  068D  120A  118A  2535  120A  118A  	fcall	_lcd_put_byte
   1555  0692                     l1211:	
-  1556                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 278:  while(lcd_busy());
+  1556                           ;../../Repo_oanh/bai_2.X/lcd.c: 278:  while(lcd_busy());
   1557                           
   1558  0692  120A  118A  2505  120A  118A  	fcall	_lcd_busy
   1559  0697  3A00               	xorlw	0
@@ -1603,8 +1594,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1565  069C                     u600:
   1566  069C                     l1213:
   1567                           
-  1568                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 280:  lcd_put_byte(0,0b00000110
-      +                          );
+  1568                           ;../../Repo_oanh/bai_2.X/lcd.c: 280:  lcd_put_byte(0,0b00000110);
   1569  069C  3006               	movlw	6
   1570  069D  00F6               	movwf	??_lcd_init
   1571  069E  0876               	movf	??_lcd_init,w
@@ -1612,7 +1602,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1573  06A0  3000               	movlw	0
   1574  06A1  120A  118A  2535  120A  118A  	fcall	_lcd_put_byte
   1575  06A6                     l1215:	
-  1576                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 281:  while(lcd_busy());
+  1576                           ;../../Repo_oanh/bai_2.X/lcd.c: 281:  while(lcd_busy());
   1577                           
   1578  06A6  120A  118A  2505  120A  118A  	fcall	_lcd_busy
   1579  06AB  3A00               	xorlw	0
@@ -1630,7 +1620,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1591  0535                     __ptext5:	
   1592 ;; *************** function _lcd_put_byte *****************
   1593 ;; Defined at:
-  1594 ;;		line 134 in file "../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c"
+  1594 ;;		line 134 in file "../../Repo_oanh/bai_2.X/lcd.c"
   1595 ;; Parameters:    Size  Location     Type
   1596 ;;  rs              1    wreg     unsigned char 
   1597 ;;  b               1    3[COMMON] unsigned char 
@@ -1674,24 +1664,23 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1635  0535  00F5               	movwf	lcd_put_byte@rs
   1636  0536                     l1107:
   1637                           
-  1638                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 134: void lcd_put_byte(unsigned
-      +                           char rs, unsigned char b);../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 135: 
-      +                          {;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 139:  TRISD4 = 0;
+  1638                           ;../../Repo_oanh/bai_2.X/lcd.c: 134: void lcd_put_byte(unsigned char rs, unsigned char b
+      +                          );../../Repo_oanh/bai_2.X/lcd.c: 135: {;../../Repo_oanh/bai_2.X/lcd.c: 139:  TRISD4 = 0;
   1639  0536  1683               	bsf	3,5	;RP0=1, select bank1
   1640  0537  1303               	bcf	3,6	;RP1=0, select bank1
   1641  0538  1208               	bcf	8,4	;volatile
   1642                           
-  1643                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 140:  TRISD5 = 0;
+  1643                           ;../../Repo_oanh/bai_2.X/lcd.c: 140:  TRISD5 = 0;
   1644  0539  1288               	bcf	8,5	;volatile
   1645                           
-  1646                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 141:  TRISD6 = 0;
+  1646                           ;../../Repo_oanh/bai_2.X/lcd.c: 141:  TRISD6 = 0;
   1647  053A  1308               	bcf	8,6	;volatile
   1648                           
-  1649                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 142:  TRISD7 = 0;
+  1649                           ;../../Repo_oanh/bai_2.X/lcd.c: 142:  TRISD7 = 0;
   1650  053B  1388               	bcf	8,7	;volatile
   1651  053C                     l1109:
   1652                           
-  1653                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 144:  if(rs)
+  1653                           ;../../Repo_oanh/bai_2.X/lcd.c: 144:  if(rs)
   1654  053C  0875               	movf	lcd_put_byte@rs,w
   1655  053D  1903               	btfsc	3,2
   1656  053E  2D40               	goto	u501
@@ -1701,23 +1690,22 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1660  0541                     u500:
   1661  0541                     l1111:
   1662                           
-  1663                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 145:   RD1 = 1;
+  1663                           ;../../Repo_oanh/bai_2.X/lcd.c: 145:   RD1 = 1;
   1664  0541  1283               	bcf	3,5	;RP0=0, select bank0
   1665  0542  1303               	bcf	3,6	;RP1=0, select bank0
   1666  0543  1488               	bsf	8,1	;volatile
   1667  0544  2D48               	goto	l1113
   1668  0545                     l96:	
-  1669                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 146:  else
+  1669                           ;../../Repo_oanh/bai_2.X/lcd.c: 146:  else
   1670                           
   1671                           
-  1672                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 147:   RD1 = 0;
+  1672                           ;../../Repo_oanh/bai_2.X/lcd.c: 147:   RD1 = 0;
   1673  0545  1283               	bcf	3,5	;RP0=0, select bank0
   1674  0546  1303               	bcf	3,6	;RP1=0, select bank0
   1675  0547  1088               	bcf	8,1	;volatile
   1676  0548                     l1113:
   1677                           
-  1678                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 148:  _delay((unsigned long)((2
-      +                          0)*(4000000/4000000.0)));
+  1678                           ;../../Repo_oanh/bai_2.X/lcd.c: 148:  _delay((unsigned long)((20)*(4000000/4000000.0)));
   1679  0548  3006               	movlw	6
   1680  0549  00F4               	movwf	??_lcd_put_byte
   1681  054A                     u817:
@@ -1726,13 +1714,12 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1684  054C  0000               	nop
   1685  054D                     l1115:
   1686                           
-  1687                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 150:  RD2 = 0;
+  1687                           ;../../Repo_oanh/bai_2.X/lcd.c: 150:  RD2 = 0;
   1688  054D  1283               	bcf	3,5	;RP0=0, select bank0
   1689  054E  1303               	bcf	3,6	;RP1=0, select bank0
   1690  054F  1108               	bcf	8,2	;volatile
   1691                           
-  1692                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 151:  _delay((unsigned long)((2
-      +                          0)*(4000000/4000000.0)));
+  1692                           ;../../Repo_oanh/bai_2.X/lcd.c: 151:  _delay((unsigned long)((20)*(4000000/4000000.0)));
   1693  0550  3006               	movlw	6
   1694  0551  00F4               	movwf	??_lcd_put_byte
   1695  0552                     u827:
@@ -1741,13 +1728,13 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1698  0554  0000               	nop
   1699  0555                     l1117:
   1700                           
-  1701                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 153:  RD3 = 0;
+  1701                           ;../../Repo_oanh/bai_2.X/lcd.c: 153:  RD3 = 0;
   1702  0555  1283               	bcf	3,5	;RP0=0, select bank0
   1703  0556  1303               	bcf	3,6	;RP1=0, select bank0
   1704  0557  1188               	bcf	8,3	;volatile
   1705  0558                     l1119:
   1706                           
-  1707                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 155:  lcd_put_nibble(b >> 4);
+  1707                           ;../../Repo_oanh/bai_2.X/lcd.c: 155:  lcd_put_nibble(b >> 4);
   1708  0558  0873               	movf	lcd_put_byte@b,w
   1709  0559  00F4               	movwf	??_lcd_put_byte
   1710  055A  3004               	movlw	4
@@ -1761,7 +1748,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1718  0561  120A  118A  256E  120A  118A  	fcall	_lcd_put_nibble
   1719  0566                     l1121:
   1720                           
-  1721                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 157:  lcd_put_nibble(b & 0xf);
+  1721                           ;../../Repo_oanh/bai_2.X/lcd.c: 157:  lcd_put_nibble(b & 0xf);
   1722  0566  0873               	movf	lcd_put_byte@b,w
   1723  0567  390F               	andlw	15
   1724  0568  120A  118A  256E  120A  118A  	fcall	_lcd_put_nibble
@@ -1773,7 +1760,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1730  056E                     __ptext6:	
   1731 ;; *************** function _lcd_put_nibble *****************
   1732 ;; Defined at:
-  1733 ;;		line 103 in file "../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c"
+  1733 ;;		line 103 in file "../../Repo_oanh/bai_2.X/lcd.c"
   1734 ;; Parameters:    Size  Location     Type
   1735 ;;  b               1    wreg     unsigned char 
   1736 ;; Auto vars:     Size  Location     Type
@@ -1812,32 +1799,31 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1769  056E  00F1               	movwf	lcd_put_nibble@b
   1770  056F                     l1091:
   1771                           
-  1772                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 103: void lcd_put_nibble(unsign
-      +                          ed char b);../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 104: {;../../../Docum
-      +                          ents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 106:  BYTE_VAL temp;;../../../Documents/Thu vi
-      +                          en lcd/Thu vien lcd/PIC/lcd.c: 109:  TRISD4 = 0;
+  1772                           ;../../Repo_oanh/bai_2.X/lcd.c: 103: void lcd_put_nibble(unsigned char b);../../Repo_oan
+      +                          h/bai_2.X/lcd.c: 104: {;../../Repo_oanh/bai_2.X/lcd.c: 106:  BYTE_VAL temp;;../../Repo_o
+      +                          anh/bai_2.X/lcd.c: 109:  TRISD4 = 0;
   1773  056F  1683               	bsf	3,5	;RP0=1, select bank1
   1774  0570  1303               	bcf	3,6	;RP1=0, select bank1
   1775  0571  1208               	bcf	8,4	;volatile
   1776                           
-  1777                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 110:  TRISD5 = 0;
+  1777                           ;../../Repo_oanh/bai_2.X/lcd.c: 110:  TRISD5 = 0;
   1778  0572  1288               	bcf	8,5	;volatile
   1779                           
-  1780                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 111:  TRISD6 = 0;
+  1780                           ;../../Repo_oanh/bai_2.X/lcd.c: 111:  TRISD6 = 0;
   1781  0573  1308               	bcf	8,6	;volatile
   1782                           
-  1783                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 112:  TRISD7 = 0;
+  1783                           ;../../Repo_oanh/bai_2.X/lcd.c: 112:  TRISD7 = 0;
   1784  0574  1388               	bcf	8,7	;volatile
   1785  0575                     l1093:
   1786                           
-  1787                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 114:  temp.Val = b;
+  1787                           ;../../Repo_oanh/bai_2.X/lcd.c: 114:  temp.Val = b;
   1788  0575  0871               	movf	lcd_put_nibble@b,w
   1789  0576  00F0               	movwf	??_lcd_put_nibble
   1790  0577  0870               	movf	??_lcd_put_nibble,w
   1791  0578  00F2               	movwf	lcd_put_nibble@temp
   1792  0579                     l1095:
   1793                           
-  1794                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 116:  RD4 = temp.bits.b0;
+  1794                           ;../../Repo_oanh/bai_2.X/lcd.c: 116:  RD4 = temp.bits.b0;
   1795  0579  1872               	btfsc	lcd_put_nibble@temp,0
   1796  057A  2D7C               	goto	u421
   1797  057B  2D80               	goto	u420
@@ -1853,7 +1839,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1807  0583                     u434:
   1808  0583                     l1097:
   1809                           
-  1810                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 117:  RD5 = temp.bits.b1;
+  1810                           ;../../Repo_oanh/bai_2.X/lcd.c: 117:  RD5 = temp.bits.b1;
   1811  0583  18F2               	btfsc	lcd_put_nibble@temp,1
   1812  0584  2D86               	goto	u441
   1813  0585  2D8A               	goto	u440
@@ -1869,7 +1855,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1823  058D                     u454:
   1824  058D                     l1099:
   1825                           
-  1826                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 118:  RD6 = temp.bits.b2;
+  1826                           ;../../Repo_oanh/bai_2.X/lcd.c: 118:  RD6 = temp.bits.b2;
   1827  058D  1972               	btfsc	lcd_put_nibble@temp,2
   1828  058E  2D90               	goto	u461
   1829  058F  2D94               	goto	u460
@@ -1885,7 +1871,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1839  0597                     u474:
   1840  0597                     l1101:
   1841                           
-  1842                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 119:  RD7 = temp.bits.b3;
+  1842                           ;../../Repo_oanh/bai_2.X/lcd.c: 119:  RD7 = temp.bits.b3;
   1843  0597  19F2               	btfsc	lcd_put_nibble@temp,3
   1844  0598  2D9A               	goto	u481
   1845  0599  2D9E               	goto	u480
@@ -1900,8 +1886,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1854  05A0  1388               	bcf	8,7	;volatile
   1855  05A1                     u494:
   1856                           
-  1857                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 121:  _delay((unsigned long)((2
-      +                          0)*(4000000/4000000.0)));
+  1857                           ;../../Repo_oanh/bai_2.X/lcd.c: 121:  _delay((unsigned long)((20)*(4000000/4000000.0)));
   1858  05A1  3006               	movlw	6
   1859  05A2  00F0               	movwf	??_lcd_put_nibble
   1860  05A3                     u837:
@@ -1910,13 +1895,12 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1863  05A5  0000               	nop
   1864  05A6                     l1103:
   1865                           
-  1866                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 122:  RD3 = 1;
+  1866                           ;../../Repo_oanh/bai_2.X/lcd.c: 122:  RD3 = 1;
   1867  05A6  1283               	bcf	3,5	;RP0=0, select bank0
   1868  05A7  1303               	bcf	3,6	;RP1=0, select bank0
   1869  05A8  1588               	bsf	8,3	;volatile
   1870                           
-  1871                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 123:  _delay((unsigned long)((2
-      +                          0)*(4000000/4000000.0)));
+  1871                           ;../../Repo_oanh/bai_2.X/lcd.c: 123:  _delay((unsigned long)((20)*(4000000/4000000.0)));
   1872  05A9  3006               	movlw	6
   1873  05AA  00F0               	movwf	??_lcd_put_nibble
   1874  05AB                     u847:
@@ -1925,7 +1909,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1877  05AD  0000               	nop
   1878  05AE                     l1105:
   1879                           
-  1880                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 124:  RD3 = 0;
+  1880                           ;../../Repo_oanh/bai_2.X/lcd.c: 124:  RD3 = 0;
   1881  05AE  1283               	bcf	3,5	;RP0=0, select bank0
   1882  05AF  1303               	bcf	3,6	;RP1=0, select bank0
   1883  05B0  1188               	bcf	8,3	;volatile
@@ -1937,7 +1921,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1889  0505                     __ptext7:	
   1890 ;; *************** function _lcd_busy *****************
   1891 ;; Defined at:
-  1892 ;;		line 18 in file "../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c"
+  1892 ;;		line 18 in file "../../Repo_oanh/bai_2.X/lcd.c"
   1893 ;; Parameters:    Size  Location     Type
   1894 ;;		None
   1895 ;; Auto vars:     Size  Location     Type
@@ -1975,32 +1959,31 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1927                           ; Regs used in _lcd_busy: [wreg+status,2]
   1928                           
   1929                           
-  1930                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 21: unsigned char busy;;../../.
-      +                          ./Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 24:  TRISD4 = 1;
+  1930                           ;../../Repo_oanh/bai_2.X/lcd.c: 21: unsigned char busy;;../../Repo_oanh/bai_2.X/lcd.c: 2
+      +                          4:  TRISD4 = 1;
   1931  0505  1683               	bsf	3,5	;RP0=1, select bank1
   1932  0506  1303               	bcf	3,6	;RP1=0, select bank1
   1933  0507  1608               	bsf	8,4	;volatile
   1934                           
-  1935                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 25:  TRISD5 = 1;
+  1935                           ;../../Repo_oanh/bai_2.X/lcd.c: 25:  TRISD5 = 1;
   1936  0508  1688               	bsf	8,5	;volatile
   1937                           
-  1938                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 26:  TRISD6 = 1;
+  1938                           ;../../Repo_oanh/bai_2.X/lcd.c: 26:  TRISD6 = 1;
   1939  0509  1708               	bsf	8,6	;volatile
   1940                           
-  1941                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 27:  TRISD7 = 1;
+  1941                           ;../../Repo_oanh/bai_2.X/lcd.c: 27:  TRISD7 = 1;
   1942  050A  1788               	bsf	8,7	;volatile
   1943                           
-  1944                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 29:  RD2 = 1;
+  1944                           ;../../Repo_oanh/bai_2.X/lcd.c: 29:  RD2 = 1;
   1945  050B  1283               	bcf	3,5	;RP0=0, select bank0
   1946  050C  1303               	bcf	3,6	;RP1=0, select bank0
   1947  050D  1508               	bsf	8,2	;volatile
   1948                           
-  1949                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 30:  RD1 = 0;
+  1949                           ;../../Repo_oanh/bai_2.X/lcd.c: 30:  RD1 = 0;
   1950  050E  1088               	bcf	8,1	;volatile
   1951  050F                     l1125:
   1952                           
-  1953                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 31:  _delay((unsigned long)((20
-      +                          )*(4000000/4000000.0)));
+  1953                           ;../../Repo_oanh/bai_2.X/lcd.c: 31:  _delay((unsigned long)((20)*(4000000/4000000.0)));
   1954  050F  3006               	movlw	6
   1955  0510  00F0               	movwf	??_lcd_busy
   1956  0511                     u857:
@@ -2009,13 +1992,12 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1959  0513  0000               	nop
   1960  0514                     l1127:
   1961                           
-  1962                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 32:  RD3 = 1;
+  1962                           ;../../Repo_oanh/bai_2.X/lcd.c: 32:  RD3 = 1;
   1963  0514  1283               	bcf	3,5	;RP0=0, select bank0
   1964  0515  1303               	bcf	3,6	;RP1=0, select bank0
   1965  0516  1588               	bsf	8,3	;volatile
   1966                           
-  1967                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 33:  _delay((unsigned long)((20
-      +                          )*(4000000/4000000.0)));
+  1967                           ;../../Repo_oanh/bai_2.X/lcd.c: 33:  _delay((unsigned long)((20)*(4000000/4000000.0)));
   1968  0517  3006               	movlw	6
   1969  0518  00F0               	movwf	??_lcd_busy
   1970  0519                     u867:
@@ -2024,7 +2006,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1973  051B  0000               	nop
   1974  051C                     l1129:
   1975                           
-  1976                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 35:  busy = RD7;
+  1976                           ;../../Repo_oanh/bai_2.X/lcd.c: 35:  busy = RD7;
   1977  051C  3000               	movlw	0
   1978  051D  1283               	bcf	3,5	;RP0=0, select bank0
   1979  051E  1303               	bcf	3,6	;RP1=0, select bank0
@@ -2033,12 +2015,11 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1982  0521  00F1               	movwf	lcd_busy@busy
   1983  0522                     l1131:
   1984                           
-  1985                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 37:  RD3 = 0;
+  1985                           ;../../Repo_oanh/bai_2.X/lcd.c: 37:  RD3 = 0;
   1986  0522  1188               	bcf	8,3	;volatile
   1987  0523                     l1133:
   1988                           
-  1989                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 38:  _delay((unsigned long)((20
-      +                          )*(4000000/4000000.0)));
+  1989                           ;../../Repo_oanh/bai_2.X/lcd.c: 38:  _delay((unsigned long)((20)*(4000000/4000000.0)));
   1990  0523  3006               	movlw	6
   1991  0524  00F0               	movwf	??_lcd_busy
   1992  0525                     u877:
@@ -2047,14 +2028,13 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1995  0527  0000               	nop
   1996  0528                     l1135:
   1997                           
-  1998                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 39:  RD3 = 1;
+  1998                           ;../../Repo_oanh/bai_2.X/lcd.c: 39:  RD3 = 1;
   1999  0528  1283               	bcf	3,5	;RP0=0, select bank0
   2000  0529  1303               	bcf	3,6	;RP1=0, select bank0
   2001  052A  1588               	bsf	8,3	;volatile
   2002  052B                     l1137:
   2003                           
-  2004                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 40:  _delay((unsigned long)((20
-      +                          )*(4000000/4000000.0)));
+  2004                           ;../../Repo_oanh/bai_2.X/lcd.c: 40:  _delay((unsigned long)((20)*(4000000/4000000.0)));
   2005  052B  3006               	movlw	6
   2006  052C  00F0               	movwf	??_lcd_busy
   2007  052D                     u887:
@@ -2063,13 +2043,13 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2010  052F  0000               	nop
   2011  0530                     l1139:
   2012                           
-  2013                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 41:  RD3 = 0;
+  2013                           ;../../Repo_oanh/bai_2.X/lcd.c: 41:  RD3 = 0;
   2014  0530  1283               	bcf	3,5	;RP0=0, select bank0
   2015  0531  1303               	bcf	3,6	;RP1=0, select bank0
   2016  0532  1188               	bcf	8,3	;volatile
   2017  0533                     l1141:
   2018                           
-  2019                           ;../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c: 43:  return busy;
+  2019                           ;../../Repo_oanh/bai_2.X/lcd.c: 43:  return busy;
   2020  0533  0871               	movf	lcd_busy@busy,w
   2021  0534                     l85:
   2022  0534  0008               	return
@@ -2259,7 +2239,7 @@ DATA                 0      0       0      12        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.32 build 20210201212658 
-Symbol Table                                                                                   Mon May 31 11:07:10 2021
+Symbol Table                                                                                   Wed Jun 02 16:34:31 2021
 
                       pc 0002                       l52 07F9                       l85 0534  
                      l93 05B1                       l96 0545                       l98 056D  

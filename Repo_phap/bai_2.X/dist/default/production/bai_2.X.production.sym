@@ -180,7 +180,7 @@ text3 9BE A09 CODE 9BE 0
 text1 978 9BD CODE 978 0
 %locals
 dist/default/production\bai_2.X.production.o
-C:\Users\ssc002\AppData\Local\Temp\xcAsfvc.s
+C:\Users\ssc002\AppData\Local\Temp\xcAs690.s
 857 7FC 0 CODE 0
 860 7FC 0 CODE 0
 866 7FC 0 CODE 0
@@ -234,7 +234,7 @@ newmain.c
 81 7E7 0 CODE 0
 82 7EB 0 CODE 0
 83 7F9 0 CODE 0
-../../../Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
+../../Repo_oanh/bai_2.X/lcd.c
 224 4BC 0 CODE 0
 229 4BF 0 CODE 0
 231 4C0 0 CODE 0

@@ -3,7 +3,7 @@
 [d edition pro ]
 [d chip 16F887 ]
 [d frameptr 0 ]
-"18 C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
+"18 C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
 [v _lcd_busy lcd_busy `(uc  1 e 1 0 ]
 "103
 [v _lcd_put_nibble lcd_put_nibble `(v  1 e 1 0 ]
@@ -29,7 +29,7 @@
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"24 C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
+"24 C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
 [v _main main `(v  1 e 1 0 ]
 "4184 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
 [v _RD1 RD1 `VEb  1 e 0 @65 ]
@@ -59,7 +59,7 @@
 [v _TRISD6 TRISD6 `VEb  1 e 0 @1094 ]
 "4493
 [v _TRISD7 TRISD7 `VEb  1 e 0 @1095 ]
-"24 C:\Users\ssc002\Document\Test\bai_2.X\newmain.c
+"24 C:\Users\ssc002\Document\Test\Repo_phap\bai_2.X\newmain.c
 [v _main main `(v  1 e 1 0 ]
 {
 "42
@@ -80,7 +80,7 @@
 [v main@cgram_dat cgram_dat `DC[81]uc  1 s 81 cgram_dat ]
 "83
 } 0
-"224 C:\Users\ssc002/Documents/Thu vien lcd/Thu vien lcd/PIC/lcd.c
+"224 C:\Users\ssc002\Document\Test/Repo_oanh/bai_2.X/lcd.c
 [v _lcd_puts lcd_puts `(v  1 e 1 0 ]
 {
 [v lcd_puts@s s `*.24DCuc  1 a 1 wreg ]

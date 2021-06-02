@@ -11,7 +11,7 @@
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"18 C:\Users\ssc002\Document\Test\bai_3.X\lcd.c
+"18 C:\Users\ssc002\Document\Test\Repo_oanh\bai_3.X\lcd.c
 [v _lcd_busy lcd_busy `(uc  1 e 1 0 ]
 "103
 [v _lcd_put_nibble lcd_put_nibble `(v  1 e 1 0 ]
@@ -29,11 +29,11 @@
 [v _lcd_ShiftLeft lcd_ShiftLeft `(v  1 e 1 0 ]
 "304
 [v _lcd_ShiftRight lcd_ShiftRight `(v  1 e 1 0 ]
-"318
-[v _lcd_MoveRight lcd_MoveRight `(v  1 e 1 0 ]
-"337
-[v _lcd_MoveLeft lcd_MoveLeft `(v  1 e 1 0 ]
-"24 C:\Users\ssc002\Document\Test\bai_3.X\newmain.c
+"28 C:\Users\ssc002\Document\Test\Repo_oanh\bai_3.X\newmain.c
+[v _addCharSpecial addCharSpecial `(v  1 e 1 0 ]
+"39
+[v _getLengthArr getLengthArr `(ui  1 e 2 0 ]
+"51
 [v _main main `(v  1 e 1 0 ]
 "4184 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
 [v _RD1 RD1 `VEb  1 e 0 @65 ]
@@ -63,30 +63,32 @@
 [v _TRISD6 TRISD6 `VEb  1 e 0 @1094 ]
 "4493
 [v _TRISD7 TRISD7 `VEb  1 e 0 @1095 ]
-"24 C:\Users\ssc002\Document\Test\bai_3.X\newmain.c
+"51 C:\Users\ssc002\Document\Test\Repo_oanh\bai_3.X\newmain.c
 [v _main main `(v  1 e 1 0 ]
 {
-"31
+"76
+[v main@i i `ui  1 a 2 8 ]
+[v main@length length `ui  1 a 2 6 ]
 [v main@times times `ui  1 a 2 4 ]
-"43
-[v main@i i `uc  1 a 1 6 ]
-"25
-[v main@dat_line1 dat_line1 `DC[13]uc  1 s 13 dat_line1 ]
-"26
-[v main@dat_line2 dat_line2 `DC[16]uc  1 s 16 dat_line2 ]
-"27
-[v main@dat_line3 dat_line3 `DC[14]uc  1 s 14 dat_line3 ]
-"28
-[v main@dat_line4 dat_line4 `DC[11]uc  1 s 11 dat_line4 ]
-"29
-[v main@dat_line5 dat_line5 `DC[10]uc  1 s 10 dat_line5 ]
-"30
+"52
+[v main@your_name your_name `DC[16]uc  1 s 16 your_name ]
+"53
+[v main@your_born your_born `DC[17]uc  1 s 17 your_born ]
+"54
+[v main@your_live your_live `DC[17]uc  1 s 17 your_live ]
+"55
+[v main@HKTT HKTT `DC[12]uc  1 s 12 HKTT ]
+"56
+[v main@class class `DC[12]uc  1 s 12 class ]
+"57
 [v main@MSSV MSSV `DC[14]uc  1 s 14 MSSV ]
-"32
-[v main@cgram_dat cgram_dat `DC[81]uc  1 s 81 cgram_dat ]
-"87
+"58
+[v main@special_name_born_live special_name_born_live `DC[49]uc  1 s 49 special_name_born_live ]
+"68
+[v main@special_HKTT_class special_HKTT_class `DC[33]uc  1 s 33 special_HKTT_class ]
+"128
 } 0
-"224 C:\Users\ssc002\Document\Test\bai_3.X\lcd.c
+"224 C:\Users\ssc002\Document\Test\Repo_oanh\bai_3.X\lcd.c
 [v _lcd_puts lcd_puts `(v  1 e 1 0 ]
 {
 [v lcd_puts@s s `*.24DCuc  1 a 1 wreg ]
@@ -120,48 +122,39 @@
 {
 "282
 } 0
-"18
-[v _lcd_busy lcd_busy `(uc  1 e 1 0 ]
-{
-"21
-[v lcd_busy@busy busy `uc  1 a 1 1 ]
-"44
-} 0
-"318
-[v _lcd_MoveRight lcd_MoveRight `(v  1 e 1 0 ]
-{
-[v lcd_MoveRight@p p `uc  1 a 1 wreg ]
-"321
-[v lcd_MoveRight@i i `uc  1 a 1 10 ]
-"318
-[v lcd_MoveRight@p p `uc  1 a 1 wreg ]
-"324
-[v lcd_MoveRight@p p `uc  1 a 1 9 ]
-"329
-} 0
 "304
 [v _lcd_ShiftRight lcd_ShiftRight `(v  1 e 1 0 ]
 {
 "310
-} 0
-"337
-[v _lcd_MoveLeft lcd_MoveLeft `(v  1 e 1 0 ]
-{
-[v lcd_MoveLeft@p p `uc  1 a 1 wreg ]
-"340
-[v lcd_MoveLeft@i i `uc  1 a 1 10 ]
-"337
-[v lcd_MoveLeft@p p `uc  1 a 1 wreg ]
-"343
-[v lcd_MoveLeft@p p `uc  1 a 1 9 ]
-"348
 } 0
 "290
 [v _lcd_ShiftLeft lcd_ShiftLeft `(v  1 e 1 0 ]
 {
 "296
 } 0
-"134
+"39 C:\Users\ssc002\Document\Test\Repo_oanh\bai_3.X\newmain.c
+[v _getLengthArr getLengthArr `(ui  1 e 2 0 ]
+{
+[v getLengthArr@character character `*.24uc  1 a 1 wreg ]
+"40
+[v getLengthArr@i i `ui  1 a 2 2 ]
+"39
+[v getLengthArr@character character `*.24uc  1 a 1 wreg ]
+[v getLengthArr@character character `*.24uc  1 a 1 4 ]
+"49
+} 0
+"28
+[v _addCharSpecial addCharSpecial `(v  1 e 1 0 ]
+{
+[v addCharSpecial@character character `*.24uc  1 a 1 wreg ]
+"29
+[v addCharSpecial@i i `ui  1 a 2 7 ]
+"28
+[v addCharSpecial@character character `*.24uc  1 a 1 wreg ]
+[v addCharSpecial@character character `*.24uc  1 a 1 9 ]
+"37
+} 0
+"134 C:\Users\ssc002\Document\Test\Repo_oanh\bai_3.X\lcd.c
 [v _lcd_put_byte lcd_put_byte `(v  1 e 1 0 ]
 {
 [v lcd_put_byte@rs rs `uc  1 a 1 wreg ]
@@ -192,4 +185,11 @@
 "109
 [v lcd_put_nibble@b b `uc  1 a 1 1 ]
 "125
+} 0
+"18
+[v _lcd_busy lcd_busy `(uc  1 e 1 0 ]
+{
+"21
+[v lcd_busy@busy busy `uc  1 a 1 1 ]
+"44
 } 0

@@ -3,6 +3,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "72 ./lcd.h
 [; ;./lcd.h: 72:  void lcd_init(void);
 [v _lcd_init `(v ~T0 @X0 0 ef ]
+"77
+[; ;./lcd.h: 77:  void lcd_putc(char c);
+[v _lcd_putc `(v ~T0 @X0 0 ef1`uc ]
+"76
+[; ;./lcd.h: 76:  void lcd_gotoxy(unsigned char col, unsigned char row);
+[v _lcd_gotoxy `(v ~T0 @X0 0 ef2`uc`uc ]
 "78
 [; ;./lcd.h: 78:  void lcd_puts(const char* s);
 [v _lcd_puts `(v ~T0 @X0 0 ef1`*Cuc ]
@@ -11,6 +17,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v __delay `JF1256 ~T0 @X0 0 e ]
 [p i __delay ]
 "2 newmain.c
+[; ;newmain.c: 2: 
 [p x FOSC  =  HS         ]
 "3
 [p x WDTE  =  OFF        ]
@@ -269,47 +276,202 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 3546: __asm("EECON2 equ 018Dh");
 [; <" EECON2 equ 018Dh ;# ">
 [v $root$_main `(v ~T0 @X0 0 e ]
-"24 newmain.c
-[; ;newmain.c: 24: void main(void) {
+"25 newmain.c
+[; ;newmain.c: 25: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"25
-[; ;newmain.c: 25:     while(1) {
-[e :U 147 ]
-{
 "26
-[; ;newmain.c: 26:         lcd_init();
-[e ( _lcd_init ..  ]
+[; ;newmain.c: 26:     const char your_name[] = "Trinh Kieu Oanh";
+[v F1542 `Cuc ~T0 @X0 -> 16 `i s your_name ]
+[i F1542
+:U ..
+-> 84 `c
+-> 114 `c
+-> 105 `c
+-> 110 `c
+-> 104 `c
+-> 32 `c
+-> 75 `c
+-> 105 `c
+-> 101 `c
+-> 117 `c
+-> 32 `c
+-> 79 `c
+-> 97 `c
+-> 110 `c
+-> 104 `c
+-> 0 `c
+..
+]
 "27
-[; ;newmain.c: 27:         lcd_puts("\fNguyen Tan Phap\nMSSV: 19436481");
-[e ( _lcd_puts (1 :s 1C ]
+[; ;newmain.c: 27:     const char your_born[] = "NgaySinh:10/2001";
+[v F1543 `Cuc ~T0 @X0 -> 17 `i s your_born ]
+[i F1543
+:U ..
+-> 78 `c
+-> 103 `c
+-> 97 `c
+-> 121 `c
+-> 83 `c
+-> 105 `c
+-> 110 `c
+-> 104 `c
+-> 58 `c
+-> 49 `c
+-> 48 `c
+-> 47 `c
+-> 50 `c
+-> 48 `c
+-> 48 `c
+-> 49 `c
+-> 0 `c
+..
+]
 "28
-[; ;newmain.c: 28:         _delay((unsigned long)((2000)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 2000 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;newmain.c: 28:     const char your_live[] = "NoiSinh:Dong Nai";
+[v F1544 `Cuc ~T0 @X0 -> 17 `i s your_live ]
+[i F1544
+:U ..
+-> 78 `c
+-> 111 `c
+-> 105 `c
+-> 83 `c
+-> 105 `c
+-> 110 `c
+-> 104 `c
+-> 58 `c
+-> 68 `c
+-> 111 `c
+-> 110 `c
+-> 103 `c
+-> 32 `c
+-> 78 `c
+-> 97 `c
+-> 105 `c
+-> 0 `c
+..
+]
 "29
-[; ;newmain.c: 29:         lcd_puts("\fNgaySinh:12/2001\nNS: NinhThuan");
-[e ( _lcd_puts (1 :s 2C ]
+[; ;newmain.c: 29:     const char HKTT[] = "HKTT: Go Vap";
+[v F1545 `Cuc ~T0 @X0 -> 13 `i s HKTT ]
+[i F1545
+:U ..
+-> 72 `c
+-> 75 `c
+-> 84 `c
+-> 84 `c
+-> 58 `c
+-> 32 `c
+-> 71 `c
+-> 111 `c
+-> 32 `c
+-> 86 `c
+-> 97 `c
+-> 112 `c
+-> 0 `c
+..
+]
 "30
-[; ;newmain.c: 30:         _delay((unsigned long)((2000)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 2000 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;newmain.c: 30:     const char class[] = "Lop: DTVT15A";
+[v F1546 `Cuc ~T0 @X0 -> 13 `i s class ]
+[i F1546
+:U ..
+-> 76 `c
+-> 111 `c
+-> 112 `c
+-> 58 `c
+-> 32 `c
+-> 68 `c
+-> 84 `c
+-> 86 `c
+-> 84 `c
+-> 49 `c
+-> 53 `c
+-> 65 `c
+-> 0 `c
+..
+]
 "31
-[; ;newmain.c: 31:         lcd_puts("\fHKTT:GoVap,TPHCM\nLop:DHVT15A");
-[e ( _lcd_puts (1 :s 3C ]
+[; ;newmain.c: 31:     const char MSSV[] = "MSSV:19471301";
+[v F1547 `Cuc ~T0 @X0 -> 14 `i s MSSV ]
+[i F1547
+:U ..
+-> 77 `c
+-> 83 `c
+-> 83 `c
+-> 86 `c
+-> 58 `c
+-> 49 `c
+-> 57 `c
+-> 52 `c
+-> 55 `c
+-> 49 `c
+-> 51 `c
+-> 48 `c
+-> 49 `c
+-> 0 `c
+..
+]
 "32
-[; ;newmain.c: 32:         _delay((unsigned long)((2000)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 2000 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;newmain.c: 32:     lcd_init();
+[e ( _lcd_init ..  ]
 "33
-[; ;newmain.c: 33:     }
-}
-[e :U 146 ]
-[e $U 147  ]
-[e :U 148 ]
+[; ;newmain.c: 33:     lcd_putc('\f');
+[e ( _lcd_putc (1 -> -> 12 `ui `uc ]
 "34
-[; ;newmain.c: 34: }
+[; ;newmain.c: 34:     lcd_gotoxy(0, 0);
+[e ( _lcd_gotoxy (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
+"35
+[; ;newmain.c: 35:     lcd_puts(your_name);
+[e ( _lcd_puts (1 &U F1542 ]
+"36
+[; ;newmain.c: 36:     lcd_gotoxy(0, 1);
+[e ( _lcd_gotoxy (2 , -> -> 0 `i `uc -> -> 1 `i `uc ]
+"37
+[; ;newmain.c: 37:     lcd_puts(MSSV);
+[e ( _lcd_puts (1 &U F1547 ]
+"38
+[; ;newmain.c: 38:     _delay((unsigned long)((2000)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 2000 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"39
+[; ;newmain.c: 39:     lcd_putc('\f');
+[e ( _lcd_putc (1 -> -> 12 `ui `uc ]
+"40
+[; ;newmain.c: 40:     lcd_gotoxy(0, 0);
+[e ( _lcd_gotoxy (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
+"41
+[; ;newmain.c: 41:     lcd_puts(your_born);
+[e ( _lcd_puts (1 &U F1543 ]
+"42
+[; ;newmain.c: 42:     lcd_gotoxy(0, 1);
+[e ( _lcd_gotoxy (2 , -> -> 0 `i `uc -> -> 1 `i `uc ]
+"43
+[; ;newmain.c: 43:     lcd_puts(your_live);
+[e ( _lcd_puts (1 &U F1544 ]
+"44
+[; ;newmain.c: 44:     _delay((unsigned long)((2000)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 2000 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"45
+[; ;newmain.c: 45:     lcd_putc('\f');
+[e ( _lcd_putc (1 -> -> 12 `ui `uc ]
+"46
+[; ;newmain.c: 46:     lcd_gotoxy(0, 0);
+[e ( _lcd_gotoxy (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
+"47
+[; ;newmain.c: 47:     lcd_puts(HKTT);
+[e ( _lcd_puts (1 &U F1545 ]
+"48
+[; ;newmain.c: 48:     lcd_gotoxy(0, 1);
+[e ( _lcd_gotoxy (2 , -> -> 0 `i `uc -> -> 1 `i `uc ]
+"49
+[; ;newmain.c: 49:     lcd_puts(class);
+[e ( _lcd_puts (1 &U F1546 ]
+"50
+[; ;newmain.c: 50:     _delay((unsigned long)((2000)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 2000 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"51
+[; ;newmain.c: 51: }
 [e :UE 145 ]
 }
-[a 2C 12 78 103 97 121 83 105 110 104 58 49 50 47 50 48 48 49 10 78 83 58 32 78 105 110 104 84 104 117 97 110 0 ]
-[a 3C 12 72 75 84 84 58 71 111 86 97 112 44 84 80 72 67 77 10 76 111 112 58 68 72 86 84 49 53 65 0 ]
-[a 1C 12 78 103 117 121 101 110 32 84 97 110 32 80 104 97 112 10 77 83 83 86 58 32 49 57 52 51 54 52 56 49 0 ]
