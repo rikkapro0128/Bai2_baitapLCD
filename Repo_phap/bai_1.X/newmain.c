@@ -15,20 +15,31 @@
 #pragma config WRT = OFF        // Flash Program Memory Self Write Enable bits (Write protection off)
 
 #define _XTAL_FREQ 4000000
+#define timeTest 2000 
 #include <xc.h>
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include "lcd.h"
 
+void showContent(char arr_1[], char arr_2[]) {
+    lcd_putc('\f');
+    lcd_gotoxy(0, 0);
+    lcd_puts(arr_1);
+    lcd_gotoxy(0, 1);
+    lcd_puts(arr_2);
+    __delay_ms(timeTest);
+}
+
 void main(void) {
-    while(1) {
-        lcd_init();
-        lcd_puts("\fNguyen Tan Phap\nMSSV: 19436481"); // xóa màn hình
-        __delay_ms(2000);
-        lcd_puts("\fNgaySinh:12/2001\nNS: NinhThuan"); // xóa màn hình
-        __delay_ms(2000);
-        lcd_puts("\fHKTT:GoVap,TPHCM\nLop:DHVT15A"); // xóa màn hình
-        __delay_ms(2000);
-    }
+    const char your_name[] = "Nguyen Tan Phap";
+    const char your_born[] = "NgaySinh:12/2001";
+    const char your_live[] = "NoiS: NinhThuan";
+    const char HKTT[] = "HKTT: Go Vap";
+    const char class[] = "Lop: DTVT15A";
+    const char MSSV[] = "MSSV:19436481";
+    lcd_init();
+    showContent(your_name, MSSV);
+    showContent(your_born, your_live);
+    showContent(HKTT, class);
 }

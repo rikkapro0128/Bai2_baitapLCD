@@ -25,6 +25,10 @@
 
 
 
+
+
+
+
 # 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 1 3
 # 18 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -2505,7 +2509,7 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 28 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 2 3
-# 18 "newmain.c" 2
+# 22 "newmain.c" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\math.h" 1 3
 
@@ -2540,7 +2544,7 @@ extern double ldexp(double, int);
 extern double fmod(double, double);
 extern double trunc(double);
 extern double round(double);
-# 19 "newmain.c" 2
+# 23 "newmain.c" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdio.h" 1 3
 
@@ -2639,7 +2643,7 @@ extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupport
 #pragma printf_check(sprintf) const
 extern int sprintf(char *, const char *, ...);
 extern int printf(const char *, ...);
-# 20 "newmain.c" 2
+# 24 "newmain.c" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdlib.h" 1 3
 
@@ -2724,7 +2728,7 @@ extern char * ltoa(char * buf, long val, int base);
 extern char * ultoa(char * buf, unsigned long val, int base);
 
 extern char * ftoa(float f, int * status);
-# 21 "newmain.c" 2
+# 25 "newmain.c" 2
 
 # 1 "./lcd.h" 1
 # 55 "./lcd.h"
@@ -2758,70 +2762,107 @@ typedef union _BYTE_VAL
  void lcd_MoveRight(unsigned char p);
  void lcd_MoveLeft(unsigned char p);
  void lcd_String_Delay(unsigned char*s,unsigned int dly);
-# 22 "newmain.c" 2
+# 26 "newmain.c" 2
 
 
-void main(void) {
-    const char dat_line1[] = {'N','g','u','y',0X01,'n','T',0X01,'n','P', 'h', 0X02, 'p'};
-    const char dat_line2[] = {'N','g',0X03,'y','S','i','n','h', ':', '1', '2', '/', '2', '0', '0', '1'};
-    const char dat_line3[] = {'N',0x05,'i','S', ':', 'N', 'i', 'n', 'h', 'T', 'h', 'u', 0x04, 'n'};
-    const char dat_line4[] = {'L', 0x06, 'p', ':', 0x00, 'H', 'V', 'T', '1', '5', 'A'};
-    const char dat_line5[] = {'H','K','T','T', ':', 'G', 0x07, 'V', 0x09, 'p'};
-    const char MSSV[] = "MSSV:19436481";
-    unsigned int times = 3;
-    const char cgram_dat[] = {11, 20, 12, 18, 12, 20, 24, 14,
-                1, 10, 20, 0, 28, 20, 30, 0 ,
-            2, 4, 8, 0, 28, 20, 30, 0 ,
-            0, 8, 4, 0, 28, 20, 30, 0 ,
-    8, 20, 0, 28, 20, 30, 8, 0,
-    0, 12, 4, 28, 20, 20, 28, 0 ,
-    1, 2, 12, 4, 28, 20, 28, 0 ,
-    16, 8, 0, 28, 20, 20, 28, 0,
-    0x0E,0X09,0X09,0X1D,0X09,0X09,0X0E,0X00,
-    1, 10, 20, 0, 28, 20, 30, 0,
-            0X99};
-    unsigned char i;
-    lcd_init();
-
-    i = 0;
-    lcd_put_byte(0,0x40);
+void addCharSpecial(char character[]) {
+    unsigned int i = 0;
+    lcd_put_byte(0, 0x40);
     while(lcd_busy());
-    while(cgram_dat[i] != 0x99){
-        lcd_put_byte(1,cgram_dat[i]);
+    while(character[i] != 0x99) {
+        lcd_put_byte(1, character[i]);
         while(lcd_busy());
         i++;
     }
+}
+
+unsigned int getLengthArr(char character[]) {
+    unsigned int i = 0;
+    while(1) {
+        if(character[i] == '\n')
+        {
+            break;
+        }
+        i++;
+    }
+    return i;
+}
+
+void main(void) {
+    const char your_name[] = {'N', 'g', 'u', 'y', 0x00 , 'n',' ', 'T', 0x01 , 'n', ' ', 'P', 'h', 0x02, 'p', '\n'};
+    const char your_born[] = {'N','g',0X03,'y','S','i','n','h', ':', '1', '2', '/', '2', '0', '0', '1', '\n'};
+    const char your_live[] = {'N',0x04,'i','S',':', 'N', 'i', 'n', 'h', 'T', 'h', 'u', 0x05 , 'n' , '\n'};
+    const char HKTT[] = {'H' ,'K' ,'T', 'T', ':','G', 0x01, ' ', 'V', 0x02, 'p', '\n'};
+    const char class[] = {'L', 0x03, 'p', ':', 0x00, 'H', 'V', 'T' ,'1', '5' , 'A', '\n'};
+    const char MSSV[] = "MSSV:19436481\n";
+    const char special_name_born_live[]
+    = {
+        13, 18, 8, 20, 8, 20, 30, 0,
+        1, 10, 20, 0, 28, 20, 31, 0,
+        0, 4, 8, 0, 28, 20, 30, 0,
+        8, 4, 0, 12, 18, 18, 15, 0,
+        0, 6, 2, 12, 18, 18, 12, 0,
+        8, 20, 0, 28, 20, 30, 8, 0,
+        0X99
+    };
+    const char special_HKTT_class[]
+    = {
+        14, 9, 9, 29, 9, 9, 14, 0,
+        8, 4, 0, 12, 18, 18, 12, 0,
+        1, 10, 20, 0, 28, 20, 31, 0,
+        1, 13, 5, 28, 20, 20, 28, 0,
+        0X99
+    };
+    unsigned int i = 0, length = 0, times = 3;
+    lcd_init();
+    addCharSpecial(special_name_born_live);
+    length = getLengthArr(your_name);
+
     while(times--) {
         lcd_putc('\f');
-        _delay((unsigned long)((500)*(4000000/4000.0)));
-        lcd_gotoxy(0,0);
-        for(i = 0; i <= 12; i++) {
-            lcd_putc(dat_line1[i]);
+        _delay((unsigned long)((1000/2)*(4000000/4000.0)));
+        lcd_gotoxy(0, 0);
+        for(i = 0; i < length; i++) {
+            lcd_putc(your_name[i]);
         }
-        lcd_gotoxy(0,1);
+        lcd_gotoxy(0, 1);
         lcd_puts(MSSV);
-        _delay((unsigned long)((500)*(4000000/4000.0)));
+        _delay((unsigned long)((1000/2)*(4000000/4000.0)));
     }
-    lcd_putc('\f');
-    lcd_gotoxy(0,0);
 
-    for(i = 0; i <= 15; i++) {
-        lcd_putc(dat_line2[i]);
-    }
-    lcd_gotoxy(0,1);
-    for(i = 0; i <= 13; i++) {
-        lcd_putc(dat_line3[i]);
-    }
-    lcd_MoveRight(16);
     lcd_putc('\f');
-    lcd_gotoxy(0,0);
+    lcd_gotoxy(0, 0);
+    length = getLengthArr(your_born);
+    for(i = 0; i < length; i++) {
+        lcd_putc(your_born[i]);
+    }
+    lcd_gotoxy(0, 1);
+    length = getLengthArr(your_live);
+    for(i = 0; i < length; i++) {
+        lcd_putc(your_live[i]);
+    }
+    _delay((unsigned long)((2000)*(4000000/4000.0)));
+    for(i = 0; i < 16; i++) {
+        _delay((unsigned long)((200)*(4000000/4000.0)));
+        lcd_ShiftRight();
+    }
 
-    for(i = 0; i <= 9; i++) {
-        lcd_putc(dat_line5[i]);
+    addCharSpecial(special_HKTT_class);
+    lcd_putc('\f');
+    lcd_gotoxy(0, 0);
+    length = getLengthArr(HKTT);
+    for(i = 0; i < length; i++) {
+        lcd_putc(HKTT[i]);
     }
-    lcd_gotoxy(0,1);
-    for(i = 0; i <= 10; i++) {
-        lcd_putc(dat_line4[i]);
+    lcd_gotoxy(0, 1);
+    length = getLengthArr(class);
+    for(i = 0; i < length; i++) {
+        lcd_putc(class[i]);
     }
-    lcd_MoveLeft(11);
+    _delay((unsigned long)((2000)*(4000000/4000.0)));
+    for(i = 0; i < 16; i++) {
+        _delay((unsigned long)((200)*(4000000/4000.0)));
+        lcd_ShiftLeft();
+    }
+
 }

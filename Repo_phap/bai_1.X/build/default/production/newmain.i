@@ -25,6 +25,7 @@
 
 
 
+
 # 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 1 3
 # 18 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -2505,7 +2506,7 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 28 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 2 3
-# 18 "newmain.c" 2
+# 19 "newmain.c" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\math.h" 1 3
 
@@ -2540,7 +2541,7 @@ extern double ldexp(double, int);
 extern double fmod(double, double);
 extern double trunc(double);
 extern double round(double);
-# 19 "newmain.c" 2
+# 20 "newmain.c" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdio.h" 1 3
 
@@ -2639,7 +2640,7 @@ extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupport
 #pragma printf_check(sprintf) const
 extern int sprintf(char *, const char *, ...);
 extern int printf(const char *, ...);
-# 20 "newmain.c" 2
+# 21 "newmain.c" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdlib.h" 1 3
 
@@ -2724,7 +2725,7 @@ extern char * ltoa(char * buf, long val, int base);
 extern char * ultoa(char * buf, unsigned long val, int base);
 
 extern char * ftoa(float f, int * status);
-# 21 "newmain.c" 2
+# 22 "newmain.c" 2
 
 # 1 "./lcd.h" 1
 # 55 "./lcd.h"
@@ -2758,17 +2759,27 @@ typedef union _BYTE_VAL
  void lcd_MoveRight(unsigned char p);
  void lcd_MoveLeft(unsigned char p);
  void lcd_String_Delay(unsigned char*s,unsigned int dly);
-# 22 "newmain.c" 2
+# 23 "newmain.c" 2
 
+
+void showContent(char arr_1[], char arr_2[]) {
+    lcd_putc('\f');
+    lcd_gotoxy(0, 0);
+    lcd_puts(arr_1);
+    lcd_gotoxy(0, 1);
+    lcd_puts(arr_2);
+    _delay((unsigned long)((2000)*(4000000/4000.0)));
+}
 
 void main(void) {
-    while(1) {
-        lcd_init();
-        lcd_puts("\fNguyen Tan Phap\nMSSV: 19436481");
-        _delay((unsigned long)((2000)*(4000000/4000.0)));
-        lcd_puts("\fNgaySinh:12/2001\nNS: NinhThuan");
-        _delay((unsigned long)((2000)*(4000000/4000.0)));
-        lcd_puts("\fHKTT:GoVap,TPHCM\nLop:DHVT15A");
-        _delay((unsigned long)((2000)*(4000000/4000.0)));
-    }
+    const char your_name[] = "Nguyen Tan Phap";
+    const char your_born[] = "NgaySinh:12/2001";
+    const char your_live[] = "NoiS: NinhThuan";
+    const char HKTT[] = "HKTT: Go Vap";
+    const char class[] = "Lop: DTVT15A";
+    const char MSSV[] = "MSSV:19436481";
+    lcd_init();
+    showContent(your_name, MSSV);
+    showContent(your_born, your_live);
+    showContent(HKTT, class);
 }
