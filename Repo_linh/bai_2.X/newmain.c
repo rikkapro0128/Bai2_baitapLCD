@@ -65,16 +65,16 @@ void showContent(char character_firt[], char character_second[]) {
 }
 
 void main(void) {
-    const char your_name[] = {'T', 'r', 0x00, 'n', 'h', ' ', 'K', 'i', 0x01, 'u', ' ', 'O', 'a', 'n', 'h', '\n'};
-    const char your_born[] = {'N','g',0X02,'y','S','i','n','h', ':', '1', '0', '/', '2', '0', '0', '1', '\n'};
-    const char your_live[] = {'N',0x03,'i','S', 'i', 'n', 'h', ':', 0x04, 0x05, 'n', 'g', ' ', 'N', 'a', 'i', '\n'};
-    const char HKTT[] = {'H' ,'K' ,'T', 'T', ':','G', 0x01, ' ', 'V', 0x02, 'p', '\n'};
-    const char class[] = {'L', 0x03, 'p', ':', 0x00, 'H', 'V', 'T' ,'1', '5' , 'A', '\n'};
-    const char MSSV[] = "MSSV:19471301\n";
+    const char your_name[] = {'P', 'h', 0x00, 'm',' ', 'T', '.', 'T', 'h', 0x01, 'y', ' ', 'L', 'i', 'n', 'h', '\n'};
+    const char your_born[] = {'N', 'g', 0x02, 'y', 'S', 'i', 'n', 'h', ':', '0', '5', '/', '2', '0', '0', '1', '\n'};
+    const char your_live[] = {'N',0x03,'i','S', 'i', 'n', 'h', ':', 'A', 'n', ' ', 'G', 'i', 'a', 'n', 'g', '\n'};
+    const char HKTT[] = {'H' ,'K' ,'T', 'T', ':', ' ','G', 0x01, ' ', 'V', 0x02, 'p', '\n'};
+    const char class[] = {'L', 0x03, 'p', ':', ' ', 0x00, 'H', 'V', 'T' ,'1', '5' , 'A', '\n'};
+    const char MSSV[] = "MSSV:19484081\n";
     const char special_name_born_live[] 
     = {
-        4, 0, 4, 4, 4, 0, 4, 0,// ij 0x00
-        2, 9, 20, 8, 20, 24, 12, 0,// eef 0x01
+        0, 12, 18, 18, 15, 0, 4, 0,// aj 0x00
+        8, 4, 0, 18, 18, 18, 12, 0,// uf 0x01
         8, 4, 0, 12, 18, 18, 15, 0, //af 0x02
         6, 1, 14, 17, 17, 17, 14, 0, // ow 0x03
         14, 9, 9, 29, 9, 9, 14, 0, //dd 0x04

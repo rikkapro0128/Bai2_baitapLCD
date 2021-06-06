@@ -450,30 +450,31 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _main ]
 [f ]
 "68
-[; ;newmain.c: 68:     const char your_name[] = {'T', 'r', 0x00, 'n', 'h', ' ', 'K', 'i', 0x01, 'u', ' ', 'O', 'a', 'n', 'h', '\n'};
-[v F1561 `Cuc ~T0 @X0 -> 16 `i s your_name ]
+[; ;newmain.c: 68:     const char your_name[] = {'P', 'h', 0x00, 'm',' ', 'T', '.', 'T', 'h', 0x01, 'y', ' ', 'L', 'i', 'n', 'h', '\n'};
+[v F1561 `Cuc ~T0 @X0 -> 17 `i s your_name ]
 [i F1561
 :U ..
--> -> 84 `ui `uc
--> -> 114 `ui `uc
--> -> 0 `i `uc
--> -> 110 `ui `uc
+-> -> 80 `ui `uc
 -> -> 104 `ui `uc
+-> -> 0 `i `uc
+-> -> 109 `ui `uc
 -> -> 32 `ui `uc
--> -> 75 `ui `uc
--> -> 105 `ui `uc
+-> -> 84 `ui `uc
+-> -> 46 `ui `uc
+-> -> 84 `ui `uc
+-> -> 104 `ui `uc
 -> -> 1 `i `uc
--> -> 117 `ui `uc
+-> -> 121 `ui `uc
 -> -> 32 `ui `uc
--> -> 79 `ui `uc
--> -> 97 `ui `uc
+-> -> 76 `ui `uc
+-> -> 105 `ui `uc
 -> -> 110 `ui `uc
 -> -> 104 `ui `uc
 -> -> 10 `ui `uc
 ..
 ]
 "69
-[; ;newmain.c: 69:     const char your_born[] = {'N','g',0X02,'y','S','i','n','h', ':', '1', '0', '/', '2', '0', '0', '1', '\n'};
+[; ;newmain.c: 69:     const char your_born[] = {'N', 'g', 0x02, 'y', 'S', 'i', 'n', 'h', ':', '0', '5', '/', '2', '0', '0', '1', '\n'};
 [v F1562 `Cuc ~T0 @X0 -> 17 `i s your_born ]
 [i F1562
 :U ..
@@ -486,8 +487,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 110 `ui `uc
 -> -> 104 `ui `uc
 -> -> 58 `ui `uc
--> -> 49 `ui `uc
 -> -> 48 `ui `uc
+-> -> 53 `ui `uc
 -> -> 47 `ui `uc
 -> -> 50 `ui `uc
 -> -> 48 `ui `uc
@@ -497,7 +498,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 "70
-[; ;newmain.c: 70:     const char your_live[] = {'N',0x03,'i','S', 'i', 'n', 'h', ':', 0x04, 0x05, 'n', 'g', ' ', 'N', 'a', 'i', '\n'};
+[; ;newmain.c: 70:     const char your_live[] = {'N',0x03,'i','S', 'i', 'n', 'h', ':', 'A', 'n', ' ', 'G', 'i', 'a', 'n', 'g', '\n'};
 [v F1563 `Cuc ~T0 @X0 -> 17 `i s your_live ]
 [i F1563
 :U ..
@@ -509,14 +510,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 110 `ui `uc
 -> -> 104 `ui `uc
 -> -> 58 `ui `uc
--> -> 4 `i `uc
--> -> 5 `i `uc
+-> -> 65 `ui `uc
+-> -> 110 `ui `uc
+-> -> 32 `ui `uc
+-> -> 71 `ui `uc
+-> -> 105 `ui `uc
+-> -> 97 `ui `uc
 -> -> 110 `ui `uc
 -> -> 103 `ui `uc
--> -> 32 `ui `uc
--> -> 78 `ui `uc
--> -> 97 `ui `uc
--> -> 105 `ui `uc
 -> -> 10 `ui `uc
 ..
 ]
@@ -559,7 +560,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 "73
-[; ;newmain.c: 73:     const char MSSV[] = "MSSV:19471301\n";
+[; ;newmain.c: 73:     const char MSSV[] = "MSSV:19484081\n";
 [v F1566 `Cuc ~T0 @X0 -> 15 `i s MSSV ]
 [i F1566
 :U ..
@@ -571,10 +572,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> 49 `c
 -> 57 `c
 -> 52 `c
--> 55 `c
--> 49 `c
--> 51 `c
+-> 56 `c
+-> 52 `c
 -> 48 `c
+-> 56 `c
 -> 49 `c
 -> 10 `c
 -> 0 `c
@@ -585,20 +586,20 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v F1567 `Cuc ~T0 @X0 -> 49 `i s special_name_born_live ]
 [i F1567
 :U ..
--> -> 4 `i `uc
+-> -> 0 `i `uc
+-> -> 12 `i `uc
+-> -> 18 `i `uc
+-> -> 18 `i `uc
+-> -> 15 `i `uc
 -> -> 0 `i `uc
 -> -> 4 `i `uc
--> -> 4 `i `uc
--> -> 4 `i `uc
 -> -> 0 `i `uc
--> -> 4 `i `uc
--> -> 0 `i `uc
--> -> 2 `i `uc
--> -> 9 `i `uc
--> -> 20 `i `uc
 -> -> 8 `i `uc
--> -> 20 `i `uc
--> -> 24 `i `uc
+-> -> 4 `i `uc
+-> -> 0 `i `uc
+-> -> 18 `i `uc
+-> -> 18 `i `uc
+-> -> 18 `i `uc
 -> -> 12 `i `uc
 -> -> 0 `i `uc
 -> -> 8 `i `uc

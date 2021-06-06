@@ -77,7 +77,7 @@ __Hinit 0 0 CODE 0
 __Linit 0 0 CODE 0
 lcd_gotoxy@col 78 0 COMMON 1
 __end_of_main 7FC 0 CODE 0
-__end_ofmain@your_name 8D 0 STRING 0
+__end_ofmain@your_name 8E 0 STRING 0
 __Htext 0 0 ABS 0
 __Ltext 0 0 ABS 0
 __end_ofmain@your_live 6C 0 STRING 0
@@ -91,7 +91,7 @@ main@times 24 0 BANK0 1
 __Hstrings 0 0 ABS 0
 __Lstrings 0 0 ABS 0
 __pstrings 3 0 STRING 0
-main@class 9B 0 STRING 0
+main@class 9D 0 STRING 0
 getLengthArr@character 74 0 COMMON 1
 main@special_HKTT_class 3A 0 STRING 0
 _getLengthArr 3BF 0 CODE 0
@@ -132,7 +132,7 @@ __Hstack 0 0 STACK 2
 __Lstack 0 0 STACK 2
 __Hspace_0 800 0 ABS 0
 __Lspace_0 0 0 ABS 0
-__end_ofmain@MSSV 9B 0 STRING 0
+__end_ofmain@MSSV 9D 0 STRING 0
 __Hspace_1 7E 0 ABS 0
 __Lspace_1 0 0 ABS 0
 lcd_put_byte@b 73 0 COMMON 1
@@ -141,7 +141,7 @@ __Lspace_2 0 0 ABS 0
 main@your_live 5B 0 STRING 0
 __Hcinit 800 0 CODE 0
 __Lcinit 7FC 0 CODE 0
-__end_ofmain@class A7 0 STRING 0
+__end_ofmain@class AA 0 STRING 0
 lcd_gotoxy@address 79 0 COMMON 1
 main@length 26 0 BANK0 1
 __Hspace_3 0 0 ABS 0
@@ -149,7 +149,7 @@ __Lspace_3 0 0 ABS 0
 __size_of_main 0 0 ABS 0
 __Hspace_4 4010 0 ABS 0
 __Lspace_4 0 0 ABS 0
-__end_ofmain@HKTT B3 0 STRING 0
+__end_ofmain@HKTT B7 0 STRING 0
 __size_of_lcd_putc 0 0 ABS 0
 __size_of_lcd_puts 0 0 ABS 0
 __ptext10 48E 0 CODE 0
@@ -173,14 +173,14 @@ intlevel3 0 0 ENTRY 0
 intlevel4 0 0 ENTRY 0
 intlevel5 0 0 ENTRY 0
 __size_of_lcd_busy 0 0 ABS 0
-main@HKTT A7 0 STRING 0
+main@HKTT AA 0 STRING 0
 lcd_busy@busy 71 0 COMMON 1
 __HcstackCOMMON 0 0 ABS 0
 __LcstackCOMMON 0 0 ABS 0
 __pcstackCOMMON 70 0 COMMON 1
 lcd_put_byte@rs 75 0 COMMON 1
 start_initialization 7FC 0 CODE 0
-main@MSSV 8D 0 STRING 0
+main@MSSV 8E 0 STRING 0
 __Hmaintext 0 0 ABS 0
 __Lmaintext 0 0 ABS 0
 __pmaintext 618 0 CODE 0
@@ -195,7 +195,7 @@ cinit FF8 FFF CODE FF8 0
 cstackCOMMON 70 7D COMMON 70 1
 cstackBANK0 20 29 BANK0 20 1
 maintext C30 FF7 CODE C30 0
-strings 6 165 STRING 6 0
+strings 6 16D STRING 6 0
 text4 AEA C2F CODE AEA 0
 text2 A32 AE9 CODE A32 0
 text8 9A4 A31 CODE 9A4 0
@@ -209,12 +209,12 @@ text5 768 77D CODE 768 0
 text6 752 767 CODE 752 0
 %locals
 dist/default/production\bai_3.X.production.o
-C:\Users\ssc002\AppData\Local\Temp\xcAsduk.s
-882 7FC 0 CODE 0
-885 7FC 0 CODE 0
-891 7FC 0 CODE 0
-893 7FC 0 CODE 0
-894 7FD 0 CODE 0
+C:\Users\ssc002\AppData\Local\Temp\xcAs4es.s
+886 7FC 0 CODE 0
+889 7FC 0 CODE 0
+895 7FC 0 CODE 0
+897 7FC 0 CODE 0
+898 7FD 0 CODE 0
 51 618 0 CODE 0
 newmain.c
 51 618 0 CODE 0

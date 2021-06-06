@@ -355,8 +355,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 "29
-[; ;newmain.c: 29:     const char HKTT[] = "HKTT: Quan 10";
-[v F1545 `Cuc ~T0 @X0 -> 14 `i s HKTT ]
+[; ;newmain.c: 29:     const char HKTT[] = "HKTT: Go Vap";
+[v F1545 `Cuc ~T0 @X0 -> 13 `i s HKTT ]
 [i F1545
 :U ..
 -> 72 `c
@@ -365,13 +365,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> 84 `c
 -> 58 `c
 -> 32 `c
--> 81 `c
--> 117 `c
--> 97 `c
--> 110 `c
+-> 71 `c
+-> 111 `c
 -> 32 `c
--> 49 `c
--> 48 `c
+-> 86 `c
+-> 97 `c
+-> 112 `c
 -> 0 `c
 ..
 ]
@@ -396,7 +395,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 "31
-[; ;newmain.c: 31:     const char MSSV[] = "MSSV:19471301";
+[; ;newmain.c: 31:     const char MSSV[] = "MSSV:19484081";
 [v F1547 `Cuc ~T0 @X0 -> 14 `i s MSSV ]
 [i F1547
 :U ..
@@ -408,10 +407,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> 49 `c
 -> 57 `c
 -> 52 `c
--> 55 `c
--> 49 `c
--> 51 `c
+-> 56 `c
+-> 52 `c
 -> 48 `c
+-> 56 `c
 -> 49 `c
 -> 0 `c
 ..

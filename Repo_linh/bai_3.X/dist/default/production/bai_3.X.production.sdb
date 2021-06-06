@@ -11,7 +11,7 @@
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"18 C:\Users\ssc002\Document\Test\Repo_oanh\bai_3.X\lcd.c
+"18 C:\Users\ssc002\Document\Test\Repo_linh\bai_3.X\lcd.c
 [v _lcd_busy lcd_busy `(uc  1 e 1 0 ]
 "103
 [v _lcd_put_nibble lcd_put_nibble `(v  1 e 1 0 ]
@@ -29,7 +29,7 @@
 [v _lcd_ShiftLeft lcd_ShiftLeft `(v  1 e 1 0 ]
 "304
 [v _lcd_ShiftRight lcd_ShiftRight `(v  1 e 1 0 ]
-"28 C:\Users\ssc002\Document\Test\Repo_oanh\bai_3.X\newmain.c
+"28 C:\Users\ssc002\Document\Test\Repo_linh\bai_3.X\newmain.c
 [v _addCharSpecial addCharSpecial `(v  1 e 1 0 ]
 "39
 [v _getLengthArr getLengthArr `(ui  1 e 2 0 ]
@@ -63,7 +63,7 @@
 [v _TRISD6 TRISD6 `VEb  1 e 0 @1094 ]
 "4493
 [v _TRISD7 TRISD7 `VEb  1 e 0 @1095 ]
-"51 C:\Users\ssc002\Document\Test\Repo_oanh\bai_3.X\newmain.c
+"51 C:\Users\ssc002\Document\Test\Repo_linh\bai_3.X\newmain.c
 [v _main main `(v  1 e 1 0 ]
 {
 "76
@@ -71,24 +71,24 @@
 [v main@length length `ui  1 a 2 6 ]
 [v main@times times `ui  1 a 2 4 ]
 "52
-[v main@your_name your_name `DC[16]uc  1 s 16 your_name ]
+[v main@your_name your_name `DC[17]uc  1 s 17 your_name ]
 "53
 [v main@your_born your_born `DC[17]uc  1 s 17 your_born ]
 "54
 [v main@your_live your_live `DC[17]uc  1 s 17 your_live ]
 "55
-[v main@HKTT HKTT `DC[12]uc  1 s 12 HKTT ]
+[v main@HKTT HKTT `DC[13]uc  1 s 13 HKTT ]
 "56
-[v main@class class `DC[12]uc  1 s 12 class ]
+[v main@class class `DC[13]uc  1 s 13 class ]
 "57
-[v main@MSSV MSSV `DC[14]uc  1 s 14 MSSV ]
+[v main@MSSV MSSV `DC[15]uc  1 s 15 MSSV ]
 "58
 [v main@special_name_born_live special_name_born_live `DC[49]uc  1 s 49 special_name_born_live ]
 "68
 [v main@special_HKTT_class special_HKTT_class `DC[33]uc  1 s 33 special_HKTT_class ]
 "128
 } 0
-"224 C:\Users\ssc002\Document\Test\Repo_oanh\bai_3.X\lcd.c
+"224 C:\Users\ssc002\Document\Test\Repo_linh\bai_3.X\lcd.c
 [v _lcd_puts lcd_puts `(v  1 e 1 0 ]
 {
 [v lcd_puts@s s `*.24DCuc  1 a 1 wreg ]
@@ -132,7 +132,7 @@
 {
 "296
 } 0
-"39 C:\Users\ssc002\Document\Test\Repo_oanh\bai_3.X\newmain.c
+"39 C:\Users\ssc002\Document\Test\Repo_linh\bai_3.X\newmain.c
 [v _getLengthArr getLengthArr `(ui  1 e 2 0 ]
 {
 [v getLengthArr@character character `*.24uc  1 a 1 wreg ]
@@ -154,7 +154,7 @@
 [v addCharSpecial@character character `*.24uc  1 a 1 9 ]
 "37
 } 0
-"134 C:\Users\ssc002\Document\Test\Repo_oanh\bai_3.X\lcd.c
+"134 C:\Users\ssc002\Document\Test\Repo_linh\bai_3.X\lcd.c
 [v _lcd_put_byte lcd_put_byte `(v  1 e 1 0 ]
 {
 [v lcd_put_byte@rs rs `uc  1 a 1 wreg ]

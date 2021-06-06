@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files\Microchip\xc8\v2.32\pic\dat\en_msgs.txt -cn \
   -h+dist/default/production\bai_1.X.production.sym \
   --cmf=dist/default/production\bai_1.X.production.cmf -z -Q16F887 \
-  -oC:\Users\ssc002\AppData\Local\Temp\xcAs2q0.4 --defsym=__MPLAB_BUILD=1 \
+  -oC:\Users\ssc002\AppData\Local\Temp\xcAsejo.4 --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/bai_1.X.production.map -E1 -ver=XC8 Compiler \
   --acfsm=1493 -ASTACK=0110h-016Fh -pstack=STACK -ACODE=00h-07FFhx4 \
   -ASTRCODE=00h-01FFFh -ASTRING=00h-0FFhx32 -ACONST=00h-0FFhx32 \
@@ -18,7 +18,7 @@ Linker command line:
   -AEEDATA=00h-0FFh/02100h -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 \
   -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 \
   -preset_vec=00h,intentry,init,end_init -ppowerup=CODE -pcinit=CODE \
-  -pfunctab=ENTRY -k C:\Users\ssc002\AppData\Local\Temp\xcAs2q0.o \
+  -pfunctab=ENTRY -k C:\Users\ssc002\AppData\Local\Temp\xcAsejo.o \
   dist/default/production\bai_1.X.production.o 
 
 Object code version is 3.11
@@ -28,7 +28,7 @@ Machine type is 16F887
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\ssc002\AppData\Local\Temp\xcAs2q0.o
+C:\Users\ssc002\AppData\Local\Temp\xcAsejo.o
                 end_init                              0        0        3        0       0
                 config                             2007     2007        2        0       4
 dist/default/production\bai_1.X.production.o
@@ -44,7 +44,7 @@ dist/default/production\bai_1.X.production.o
                 maintext                            6C4      6C4       95      D88       0
                 cstackBANK0                          20       20        4       20       1
                 cstackCOMMON                         70       70        E       70       1
-                strings                               3        3       62        6       0
+                strings                               3        3       61        6       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
@@ -64,7 +64,7 @@ TOTAL           Name                               Link     Load   Length     Sp
         CLASS   STRCODE        
 
         CLASS   STRING         
-                strings                               3        3       62         0
+                strings                               3        3       61         0
 
         CLASS   CONST          
 
@@ -107,7 +107,7 @@ TOTAL           Name                               Link     Load   Length     Sp
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
 
                 reset_vec                      000000  000003  000003         0       0  CODE        2
-                strings                        000003  000062  000065         6       0  STRING      2
+                strings                        000003  000061  000064         6       0  STRING      2
                 cstackBANK0                    000020  000004  000024        20       1  BANK0       1
                 cstackCOMMON                   000070  00000E  00007E        70       1  COMMON      1
                 text1                          000572  000023  000595       AE4       0  CODE        2
@@ -128,12 +128,12 @@ UNUSED ADDRESS RANGES
         BANK1            00A0-00EF             50           1
         BANK2            0110-016F             60           1
         BANK3            0190-01EF             60           1
-        CODE             0065-0571            50D           2
+        CODE             0064-0571            50E           2
                          0800-1FFF            800
-        CONST            0065-0571            100           2
+        CONST            0064-0571            100           2
                          0800-1FFF            100
         EEDATA           2100-21FF            100           2
-        ENTRY            0065-0571            100           2
+        ENTRY            0064-0571            100           2
                          0800-1FFF            100
         IDLOC            2000-2003              4           2
         RAM              0024-006F             4C           1
@@ -145,9 +145,9 @@ UNUSED ADDRESS RANGES
         SFR2             0100-010F             10           1
         SFR3             0180-018F             10           1
         STACK            0110-016F             60           1
-        STRCODE          0065-0571            50D           2
+        STRCODE          0064-0571            50E           2
                          0800-1FFF           1800
-        STRING           0065-0571            100           2
+        STRING           0064-0571            100           2
                          0800-1FFF            100
 
                                   Symbol Table
@@ -251,9 +251,9 @@ __end_of_lcd_put_nibble  text6        0668
 __end_of_lcd_putc        text2        06C4
 __end_of_lcd_puts        text1        0595
 __end_of_main            maintext     0759
-__end_ofmain@HKTT        strings      0058
+__end_ofmain@HKTT        strings      0064
 __end_ofmain@MSSV        strings      004A
-__end_ofmain@class       strings      0065
+__end_ofmain@class       strings      0057
 __end_ofmain@your_born   strings      002B
 __end_ofmain@your_live   strings      001A
 __end_ofmain@your_name   strings      003C
@@ -305,9 +305,9 @@ lcd_put_nibble@b         cstackCOMMON 0071
 lcd_put_nibble@temp      cstackCOMMON 0072
 lcd_putc@c               cstackCOMMON 007C
 lcd_puts@s               cstackBANK0  0020
-main@HKTT                strings      004A
+main@HKTT                strings      0057
 main@MSSV                strings      003C
-main@class               strings      0058
+main@class               strings      004A
 main@your_born           strings      001A
 main@your_live           strings      0009
 main@your_name           strings      002B
@@ -332,10 +332,10 @@ shared
 		main@your_born 		STRING         	001A	0000	17
 		__initialization		CODE           	07FC	0000	1
 		main@MSSV      		STRING         	003C	0000	14
-		main@class     		STRING         	0058	0000	13
-		main@HKTT      		STRING         	004A	0000	14
+		main@class     		STRING         	004A	0000	13
+		main@HKTT      		STRING         	0057	0000	13
 
-shared estimated size: 99
+shared estimated size: 98
 
 lcd.c
 		_lcd_busy      		CODE           	05BB	0000	48

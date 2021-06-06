@@ -79,7 +79,7 @@ __stringtab 3 0 STRING 0
 __Hstrings 0 0 ABS 0
 __Lstrings 0 0 ABS 0
 __pstrings 3 0 STRING 0
-main@class 58 0 STRING 0
+main@class 4A 0 STRING 0
 __Hbank0 0 0 ABS 0
 __Lbank0 0 0 ABS 0
 __Hbank1 0 0 ABS 0
@@ -121,14 +121,14 @@ __Lspace_2 0 0 ABS 0
 main@your_live 9 0 STRING 0
 __Hcinit 800 0 CODE 0
 __Lcinit 7FC 0 CODE 0
-__end_ofmain@class 65 0 STRING 0
+__end_ofmain@class 57 0 STRING 0
 lcd_gotoxy@address 79 0 COMMON 1
 __Hspace_3 0 0 ABS 0
 __Lspace_3 0 0 ABS 0
 __size_of_main 0 0 ABS 0
 __Hspace_4 4010 0 ABS 0
 __Lspace_4 0 0 ABS 0
-__end_ofmain@HKTT 58 0 STRING 0
+__end_ofmain@HKTT 64 0 STRING 0
 __size_of_lcd_putc 0 0 ABS 0
 __size_of_lcd_puts 0 0 ABS 0
 lcd_put_nibble@b 71 0 COMMON 1
@@ -146,7 +146,7 @@ intlevel3 0 0 ENTRY 0
 intlevel4 0 0 ENTRY 0
 intlevel5 0 0 ENTRY 0
 __size_of_lcd_busy 0 0 ABS 0
-main@HKTT 4A 0 STRING 0
+main@HKTT 57 0 STRING 0
 lcd_busy@busy 71 0 COMMON 1
 __HcstackCOMMON 0 0 ABS 0
 __LcstackCOMMON 0 0 ABS 0
@@ -168,7 +168,7 @@ cstackCOMMON 70 7D COMMON 70 1
 cstackBANK0 20 23 BANK0 20 1
 text4 EB2 FF7 CODE EB2 0
 maintext D88 EB1 CODE D88 0
-strings 6 C9 STRING 6 0
+strings 6 C7 STRING 6 0
 text2 CD0 D87 CODE CD0 0
 text6 C48 CCF CODE C48 0
 text5 BD6 C47 CODE BD6 0
@@ -177,12 +177,12 @@ text3 B2A B75 CODE B2A 0
 text1 AE4 B29 CODE AE4 0
 %locals
 dist/default/production\bai_1.X.production.o
-C:\Users\ssc002\AppData\Local\Temp\xcAs2q0.s
-780 7FC 0 CODE 0
-783 7FC 0 CODE 0
-789 7FC 0 CODE 0
-791 7FC 0 CODE 0
-792 7FD 0 CODE 0
+C:\Users\ssc002\AppData\Local\Temp\xcAsejo.s
+779 7FC 0 CODE 0
+782 7FC 0 CODE 0
+788 7FC 0 CODE 0
+790 7FC 0 CODE 0
+791 7FD 0 CODE 0
 25 6C4 0 CODE 0
 newmain.c
 25 6C4 0 CODE 0

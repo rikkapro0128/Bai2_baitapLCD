@@ -2766,9 +2766,9 @@ void main(void) {
     const char your_name[] = "Pham T.Thuy Linh";
     const char your_born[] = "NgaySinh:05/2001";
     const char your_live[] = "NoiSinh:An Giang";
-    const char HKTT[] = "HKTT: Quan 10";
+    const char HKTT[] = "HKTT: Go Vap";
     const char class[] = "Lop: DTVT15A";
-    const char MSSV[] = "MSSV:19471301";
+    const char MSSV[] = "MSSV:19484081";
     lcd_init();
     lcd_putc('\f');
     lcd_gotoxy(0, 0);

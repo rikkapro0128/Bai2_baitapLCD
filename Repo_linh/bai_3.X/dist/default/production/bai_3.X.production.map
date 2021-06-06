@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files\Microchip\xc8\v2.32\pic\dat\en_msgs.txt -cn \
   -h+dist/default/production\bai_3.X.production.sym \
   --cmf=dist/default/production\bai_3.X.production.cmf -z -Q16F887 \
-  -oC:\Users\ssc002\AppData\Local\Temp\xcAsduk.5 --defsym=__MPLAB_BUILD=1 \
+  -oC:\Users\ssc002\AppData\Local\Temp\xcAs4es.4 --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/bai_3.X.production.map -E1 -ver=XC8 Compiler \
   --acfsm=1493 -ASTACK=0110h-016Fh -pstack=STACK -ACODE=00h-07FFhx4 \
   -ASTRCODE=00h-01FFFh -ASTRING=00h-0FFhx32 -ACONST=00h-0FFhx32 \
@@ -18,7 +18,7 @@ Linker command line:
   -AEEDATA=00h-0FFh/02100h -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 \
   -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 \
   -preset_vec=00h,intentry,init,end_init -ppowerup=CODE -pcinit=CODE \
-  -pfunctab=ENTRY -k C:\Users\ssc002\AppData\Local\Temp\xcAsduk.o \
+  -pfunctab=ENTRY -k C:\Users\ssc002\AppData\Local\Temp\xcAs4es.o \
   dist/default/production\bai_3.X.production.o 
 
 Object code version is 3.11
@@ -28,7 +28,7 @@ Machine type is 16F887
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\ssc002\AppData\Local\Temp\xcAsduk.o
+C:\Users\ssc002\AppData\Local\Temp\xcAs4es.o
                 end_init                              0        0        3        0       0
                 config                             2007     2007        2        0       4
 dist/default/production\bai_3.X.production.o
@@ -48,7 +48,7 @@ dist/default/production\bai_3.X.production.o
                 maintext                            618      618      1E4      C30       0
                 cstackBANK0                          20       20        A       20       1
                 cstackCOMMON                         70       70        E       70       1
-                strings                               3        3       B0        6       0
+                strings                               3        3       B4        6       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
@@ -72,7 +72,7 @@ TOTAL           Name                               Link     Load   Length     Sp
         CLASS   STRCODE        
 
         CLASS   STRING         
-                strings                               3        3       B0         0
+                strings                               3        3       B4         0
 
         CLASS   CONST          
 
@@ -115,7 +115,7 @@ TOTAL           Name                               Link     Load   Length     Sp
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
 
                 reset_vec                      000000  000003  000003         0       0  CODE        2
-                strings                        000003  0000B0  0000B3         6       0  STRING      2
+                strings                        000003  0000B4  0000B7         6       0  STRING      2
                 cstackBANK0                    000020  00000A  00002A        20       1  BANK0       1
                 cstackCOMMON                   000070  00000E  00007E        70       1  COMMON      1
                 text6                          0003A9  00000B  0003B4       752       0  CODE        2
@@ -140,12 +140,12 @@ UNUSED ADDRESS RANGES
         BANK1            00A0-00EF             50           1
         BANK2            0110-016F             60           1
         BANK3            0190-01EF             60           1
-        CODE             00B3-03A8            2F6           2
+        CODE             00B7-03A8            2F2           2
                          0800-1FFF            800
-        CONST            00B3-03A8            100           2
+        CONST            00B7-03A8            100           2
                          0800-1FFF            100
         EEDATA           2100-21FF            100           2
-        ENTRY            00B3-03A8            100           2
+        ENTRY            00B7-03A8            100           2
                          0800-1FFF            100
         IDLOC            2000-2003              4           2
         RAM              002A-006F             46           1
@@ -157,9 +157,9 @@ UNUSED ADDRESS RANGES
         SFR2             0100-010F             10           1
         SFR3             0180-018F             10           1
         STACK            0110-016F             60           1
-        STRCODE          00B3-03A8            2F6           2
+        STRCODE          00B7-03A8            2F2           2
                          0800-1FFF           1800
-        STRING           00B3-03A8            100           2
+        STRING           00B7-03A8            100           2
                          0800-1FFF            100
 
                                   Symbol Table
@@ -268,14 +268,14 @@ __end_of_lcd_put_nibble             text10       04D2
 __end_of_lcd_putc                   text2        0575
 __end_of_lcd_puts                   text1        03FF
 __end_of_main                       maintext     07FC
-__end_ofmain@HKTT                   strings      00B3
-__end_ofmain@MSSV                   strings      009B
-__end_ofmain@class                  strings      00A7
+__end_ofmain@HKTT                   strings      00B7
+__end_ofmain@MSSV                   strings      009D
+__end_ofmain@class                  strings      00AA
 __end_ofmain@special_HKTT_class     strings      005B
 __end_ofmain@special_name_born_live strings      003A
 __end_ofmain@your_born              strings      007D
 __end_ofmain@your_live              strings      006C
-__end_ofmain@your_name              strings      008D
+__end_ofmain@your_name              strings      008E
 __initialization                    cinit        07FC
 __pcstackBANK0                      cstackBANK0  0020
 __pcstackCOMMON                     cstackCOMMON 0070
@@ -340,9 +340,9 @@ lcd_put_nibble@b                    cstackCOMMON 0071
 lcd_put_nibble@temp                 cstackCOMMON 0072
 lcd_putc@c                          cstackCOMMON 007C
 lcd_puts@s                          cstackBANK0  0020
-main@HKTT                           strings      00A7
-main@MSSV                           strings      008D
-main@class                          strings      009B
+main@HKTT                           strings      00AA
+main@MSSV                           strings      008E
+main@class                          strings      009D
 main@i                              cstackBANK0  0028
 main@length                         cstackBANK0  0026
 main@special_HKTT_class             strings      003A
@@ -370,16 +370,16 @@ newmain.c estimated size: 584
 shared
 		__stringtab    		STRING         	0003	0000	6
 		main@special_name_born_live		STRING         	0009	0000	49
-		main@your_name 		STRING         	007D	0000	16
+		main@your_name 		STRING         	007D	0000	17
 		main@your_live 		STRING         	005B	0000	17
 		main@your_born 		STRING         	006C	0000	17
 		__initialization		CODE           	07FC	0000	1
-		main@MSSV      		STRING         	008D	0000	14
-		main@class     		STRING         	009B	0000	12
-		main@HKTT      		STRING         	00A7	0000	12
+		main@MSSV      		STRING         	008E	0000	15
+		main@class     		STRING         	009D	0000	13
+		main@HKTT      		STRING         	00AA	0000	13
 		main@special_HKTT_class		STRING         	003A	0000	33
 
-shared estimated size: 177
+shared estimated size: 181
 
 lcd.c
 		_lcd_busy      		CODE           	0425	0000	48
