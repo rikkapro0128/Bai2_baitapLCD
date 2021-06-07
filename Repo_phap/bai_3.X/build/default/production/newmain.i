@@ -2841,7 +2841,7 @@ void main(void) {
     for(i = 0; i < length; i++) {
         lcd_putc(your_live[i]);
     }
-    _delay((unsigned long)((2000)*(4000000/4000.0)));
+    _delay((unsigned long)((500)*(4000000/4000.0)));
     for(i = 0; i < 16; i++) {
         _delay((unsigned long)((200)*(4000000/4000.0)));
         lcd_ShiftRight();
@@ -2859,7 +2859,7 @@ void main(void) {
     for(i = 0; i < length; i++) {
         lcd_putc(class[i]);
     }
-    _delay((unsigned long)((2000)*(4000000/4000.0)));
+    _delay((unsigned long)((500)*(4000000/4000.0)));
     for(i = 0; i < 16; i++) {
         _delay((unsigned long)((200)*(4000000/4000.0)));
         lcd_ShiftLeft();

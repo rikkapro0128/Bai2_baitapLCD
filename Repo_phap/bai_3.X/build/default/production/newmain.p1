@@ -736,8 +736,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 173 ]
 }
 "104
-[; ;newmain.c: 104:     _delay((unsigned long)((2000)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 2000 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;newmain.c: 104:     _delay((unsigned long)((500)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 "105
 [; ;newmain.c: 105:     for(i = 0; i < 16; i++) {
 {
@@ -814,8 +814,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 184 ]
 }
 "122
-[; ;newmain.c: 122:     _delay((unsigned long)((2000)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 2000 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;newmain.c: 122:     _delay((unsigned long)((500)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 "123
 [; ;newmain.c: 123:     for(i = 0; i < 16; i++) {
 {

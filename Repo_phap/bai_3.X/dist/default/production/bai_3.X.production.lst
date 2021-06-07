@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.32 build 20210201212658 
-                                                                                               Fri Jun 04 21:41:26 2021
+                                                                                               Mon Jun 07 06:39:00 2021
 
 Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1 
      1                           	processor	16F887
@@ -1001,14 +1001,14 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
    987  0714                     u770:
    988  0714                     l1411:
    989                           
-   990                           ;newmain.c: 104:     _delay((unsigned long)((2000)*(4000000/4000.0)));
-   991  0714  300B               	movlw	11
+   990                           ;newmain.c: 104:     _delay((unsigned long)((500)*(4000000/4000.0)));
+   991  0714  3003               	movlw	3
    992  0715  1283               	bcf	3,5	;RP0=0, select bank0
    993  0716  1303               	bcf	3,6	;RP1=0, select bank0
    994  0717  00A3               	movwf	??_main+2
-   995  0718  3026               	movlw	38
+   995  0718  308A               	movlw	138
    996  0719  00A2               	movwf	??_main+1
-   997  071A  305D               	movlw	93
+   997  071A  3055               	movlw	85
    998  071B  00A1               	movwf	??_main
    999  071C                     u847:
   1000  071C  0BA1               	decfsz	??_main,f
@@ -1194,14 +1194,14 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1180  07C2                     u800:
   1181  07C2                     l1453:
   1182                           
-  1183                           ;newmain.c: 122:     _delay((unsigned long)((2000)*(4000000/4000.0)));
-  1184  07C2  300B               	movlw	11
+  1183                           ;newmain.c: 122:     _delay((unsigned long)((500)*(4000000/4000.0)));
+  1184  07C2  3003               	movlw	3
   1185  07C3  1283               	bcf	3,5	;RP0=0, select bank0
   1186  07C4  1303               	bcf	3,6	;RP1=0, select bank0
   1187  07C5  00A3               	movwf	??_main+2
-  1188  07C6  3026               	movlw	38
+  1188  07C6  308A               	movlw	138
   1189  07C7  00A2               	movwf	??_main+1
-  1190  07C8  305D               	movlw	93
+  1190  07C8  3055               	movlw	85
   1191  07C9  00A1               	movwf	??_main
   1192  07CA                     u867:
   1193  07CA  0BA1               	decfsz	??_main,f
@@ -2815,7 +2815,7 @@ DATA                 0      0       0      12        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.32 build 20210201212658 
-Symbol Table                                                                                   Fri Jun 04 21:41:26 2021
+Symbol Table                                                                                   Mon Jun 07 06:39:00 2021
 
                    ??_lcd_ShiftLeft 0076                                   pc 0002  
                                 l33 0454                                  l41 04D1  
