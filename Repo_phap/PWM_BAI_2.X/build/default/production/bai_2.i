@@ -2613,11 +2613,10 @@ void contentConfigPwm_2() {
 
 void configPwm_1() {
     TRISC2 = 1;
-    TRISC1 = 0;
-    RC1 = 0;
+    TRISC1 = 1;
     TMR2 = 0;
     PR2 = 62;
-    CCPR1L = 19;
+    CCPR1L = 18;
     CCP1CON = 0x0C;
     CCP2CON = 0x00;
     DC1B1 = 1;
@@ -2630,8 +2629,7 @@ void configPwm_1() {
 }
 
 void configPwm_2() {
-    TRISC2 = 0;
-    RC2 = 0;
+    TRISC2 = 1;
     TRISC1 = 1;
     TMR2 = 0;
     PR2 = 82;
@@ -2663,14 +2661,15 @@ void declarePort() {
 void main(void) {
     declarePort();
     while(1) {
-        RE0 = 1;
         if(!RB0) {
             while(!RB0);
+            RE0 = 1;
 
             configPwm_1();
             contentConfigPwm_1();
         }else if(!RB1) {
             while(!RB1);
+            RE0 = 1;
 
             configPwm_2();
             contentConfigPwm_2();
