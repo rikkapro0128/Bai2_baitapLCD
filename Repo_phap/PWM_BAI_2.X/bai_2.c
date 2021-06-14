@@ -17,6 +17,10 @@
 #include <xc.h>
 #include "lcd.h"
 
+void resetPort() {
+    TRISC1 = TRISC2 = 1;
+}
+
 void addCharSpecial(char character[]) {
     unsigned int i = 0;
     lcd_put_byte(0, 0x40);
@@ -85,11 +89,13 @@ void contentConfigPwm_2() {
 
 void configPwm_1() {
     TRISC2 = 1;
-    TRISC1 = 1;
+    TRISC1 = 0;
+    RC1 = 0;
     TMR2 = 0;
     PR2 = 62;
     CCPR1L = 19;
     CCP1CON = 0x0C;
+    CCP2CON = 0x00;
     DC1B1 = 1;
     DC1B0 = 1;
     TRISC2 = 0;
@@ -100,12 +106,14 @@ void configPwm_1() {
 }
 
 void configPwm_2() {
-    TRISC2 = 1;
+    TRISC2 = 0;
+    RC2 = 0;
     TRISC1 = 1;
     TMR2 = 0;
     PR2 = 82;
     CCPR2L = 67;
     CCP2CON = 0x0C;
+    CCP1CON = 0x00;
     DC2B1 = 1;
     DC2B0 = 0;
     TRISC1 = 0;
@@ -130,36 +138,24 @@ void declarePort() {
 
 void main(void) {
     declarePort();
-    if(!RB0) {
-        while(!RB0);
-        // do something!
-        configPwm_1();
-        contentConfigPwm_1();
-        while(1) {
-            if(!RB0 || !RB1 || !RB2) {
-                break;
-            }
-        }
-    }else if(!RB1) {
-        while(!RB1);
-        // do something!
-        configPwm_2();
-        contentConfigPwm_2();
-        while(1) {
-            if(!RB0 || !RB1 || !RB2) {
-                break;
-            }
-        }
-    }else if(!RB2) {
-        while(!RB2);
-        // do something!
-        TRISC1 = TRISC2 = 1;
-        RE0 = 0;
-        contentStop();
-        while(1) {
-            if(!RB0 || !RB1 || !RB2) {
-                break;
-            }
+    while(1) {
+        RE0 = 1;
+        if(!RB0) {
+            while(!RB0);
+            // do something!
+            configPwm_1();
+            contentConfigPwm_1();
+        }else if(!RB1) {
+            while(!RB1);
+            // do something!
+            configPwm_2();
+            contentConfigPwm_2();
+        }else if(!RB2) {
+            while(!RB2);
+            // do something!
+            TRISC1 = TRISC2 = 1;
+            RE0 = 0;
+            contentStop();
         }
     }
 }
